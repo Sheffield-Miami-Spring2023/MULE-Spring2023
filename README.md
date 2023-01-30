@@ -1,3 +1,3 @@
 # MULE-Spring2023
 
-Hi!
+Hey, it's Monday!
