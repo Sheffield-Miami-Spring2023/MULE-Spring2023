@@ -31,3 +31,4 @@ TBD
 	1. git clone https://github.com/Sheffield-Miami-Spring2023/MULE-Spring2023.git
 6. Put Firefox, Sonic Pi, Pure Data applications and MULE-Spring2023 folder on desktop (if desired)
 7. Install Pi updates (if available) from desktop
+8. Run git pull by double-clicking the pi-git-pull-script.sh file at the beginning of each rehearsal.
