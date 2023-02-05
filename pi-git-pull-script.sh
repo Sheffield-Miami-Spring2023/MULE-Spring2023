@@ -1,4 +1,5 @@
 #!/bin/bash
+# for easy command-line pull of MULE GitHub repo
 
 echo "Starting MULE GitHub repository pull."
 
