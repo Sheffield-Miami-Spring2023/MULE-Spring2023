@@ -8,4 +8,6 @@ git pull
 
 echo "MULE GitHub repository is up to date."
 
+sleep 2
+
 cd ~/
