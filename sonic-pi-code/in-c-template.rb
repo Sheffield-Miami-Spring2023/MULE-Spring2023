@@ -1,15 +1,10 @@
-# define global instrument parameters
+# pre-define patterns
 
-use_synth :prophet
-
-# enter pattern name and click "run" to loop
-
-loop do
-  pattern32
+define :pulse do
+  play 60, release: 0.5
+  play 72, release: 0.5
+  sleep 0.5
 end
-
-
-# pre-define patterns below
 
 define :pattern32 do
   play 65, release: 0.25
@@ -26,4 +21,20 @@ define :pattern32 do
   sleep 3.25
   play 67, release: 1.5
   sleep 1.5
+end
+
+
+# -----
+# set global parameters
+
+use_synth :saw
+# use_synth :prophet
+
+
+# ----
+# enter pattern name and click "run" to loop
+
+loop do
+  pulse
+  # pattern32
 end
