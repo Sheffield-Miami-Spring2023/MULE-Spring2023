@@ -3,6 +3,9 @@
 ## Program
 TBD
 
+## Links
+- [GroupLoop](https://feedback.davidbramsay.com/)
+
 ## Raspberry Pi Setup
 1. Flash SD card with "Raspberry Pi OS (64-bit)" version of the OS (under "other") and the following settings:
 	1. Set hostname: mule-pi-x.local
