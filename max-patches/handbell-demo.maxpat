@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 133.0, 84.0, 550.0, 409.0 ],
+		"rect" : [ 133.0, 84.0, 804.0, 478.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,48 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-38",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 261.0, 14.0, 150.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 13.0, 28.0, 371.0, 20.0 ],
+					"text" : "use either the keyboard or number box to set each pitch"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "kslider",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 690.0, 8.5, 336.0, 53.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 387.0, 50.0, 336.0, 53.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "kslider",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 314.0, 8.5, 336.0, 53.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 13.0, 50.0, 336.0, 53.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-92",
 					"maxclass" : "newobj",
@@ -94,7 +136,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 657.0, 100.0, 42.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 157.0, 29.0, 42.0, 20.0 ],
+					"presentation_rect" : [ 387.0, 105.0, 42.0, 20.0 ],
 					"text" : "pitch"
 				}
 
@@ -362,7 +404,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 701.0, 100.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 201.0, 29.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 431.0, 105.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -401,7 +443,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 599.0, 100.0, 40.0, 280.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 253.0, 29.0, 40.0, 280.0 ],
+					"presentation_rect" : [ 483.0, 105.0, 40.0, 280.0 ],
 					"size" : 20.0,
 					"varname" : "slider-2"
 				}
@@ -455,7 +497,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 78.0, 37.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 354.0, 29.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 571.0, 318.0, 150.0, 20.0 ],
 					"text" : "slider = LFO and filter"
 				}
 
@@ -540,7 +582,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 237.0, 106.0, 42.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 17.0, 29.0, 42.0, 20.0 ],
+					"presentation_rect" : [ 13.0, 105.0, 42.0, 20.0 ],
 					"text" : "pitch"
 				}
 
@@ -793,7 +835,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 281.0, 699.0, 45.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 354.0, 269.5, 45.0, 45.0 ]
+					"presentation_rect" : [ 571.0, 340.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -820,7 +862,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 281.0, 106.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 61.0, 29.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 57.0, 105.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -859,7 +901,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 179.0, 106.0, 40.0, 280.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 113.0, 29.0, 40.0, 280.0 ],
+					"presentation_rect" : [ 109.0, 105.0, 40.0, 280.0 ],
 					"size" : 20.0,
 					"varname" : "slider-1"
 				}
@@ -893,6 +935,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-12", 0 ]
 				}
 
 			}
@@ -1036,6 +1085,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-75", 0 ],
+					"source" : [ "obj-31", 0 ]
 				}
 
 			}
