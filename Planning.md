@@ -36,7 +36,7 @@ Last update: 3/1/23
 	- Create feedback control mappings (use MIDI keyboards in cabinet)
 		- What controls will the players have at their disposal?
 		- Is there a 1-to-1 mapping option for trackpad? (Eric will look into this)
-	- Experiment with a more solid system to gather a vocabulary of sounds for the piece (what does this mean?)
+	- Experiment with a protoype system to assemble a vocabulary of sounds/gestures
 	- Test w/ better transducer, the amps should be powerful enough (is Ethan buying these?)
 	- Figure out how to incorporate multiple individuals/feedback systems
 	- Think about notation
@@ -50,13 +50,13 @@ Last update: 3/1/23
 - Next steps:
 	- Develop p5-based patch (Eric will do this)
 	- Add ability to call the partials requested by the score (should this just be frequency?)
-	- Figure out how the score will sync - we can either use a timer-based system (if fixed section times) or a networked conductor
 	- Create a working score with partials numbered and clear instructions of how to play/the patch (Reese, with ensemble input)
 	- Will there be assigned parts? Composing which partials are allowed for each sub unit, played at will based on position of light
 - Ideas:
 	- Some kind of attractor or flocking behavior for nodes - boids? (Eric will look into this)
 	- Bubbles appear and move in sync with the frequencies allowed in the score (what does this mean?)
 	- Spreadsheet with time and allowed frequencies (used to generate score)
+	- Ensemble members will advance through the sections themselves
 
 ## In C
 - Lead: Eric
