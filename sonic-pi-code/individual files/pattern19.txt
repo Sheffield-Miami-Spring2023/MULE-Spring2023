@@ -1,0 +1,9 @@
+define :pattern19 do
+  sleep 1.5
+  play 91
+  sleep 1.5
+end
+
+loop do
+  pattern19
+end

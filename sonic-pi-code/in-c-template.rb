@@ -1,5 +1,6 @@
 # to-do 3/8
-# finish patterns 22-51
+# finish patterns???
+# check pattern pitch accuracy
 # implement octave shift
 # replace MIDI with note names for legibility
 # work on list of instruments
@@ -123,11 +124,11 @@ define :pattern11 do
 end
 
 define :pattern12 do
-  play :e4
+  play :f4
   sleep 0.5
-  play :fs4
+  play :g4
   sleep 0.5
-  play :bb4
+  play :b4
   sleep 2
   play :c5
   sleep 1
@@ -177,13 +178,17 @@ define :pattern16 do
 end
 
 define :pattern17 do
-  play :e4, release: 0.2
+  play :b5, release: 0.2
   sleep 0.25
-  play :fs4, release: 0.2
+  play :c5, release: 0.2
   sleep 0.25
-  play :e4, release: 0.2
+  play :b5, release: 0.2
   sleep 0.25
-  play :fs4, release: 0.2
+  play :c5, release: 0.2
+  sleep 0.25
+  play :b5, release: 0.2
+  sleep 0.25
+  sleep 0.25
 end
 
 define :pattern18 do
@@ -201,6 +206,12 @@ define :pattern18 do
   sleep 0.25
 end
 
+define :pattern19 do
+  sleep 1.5
+  play :g5
+  sleep 1.5
+end
+
 define :pattern20 do
   play :e4
   sleep 0.25
@@ -210,7 +221,7 @@ define :pattern20 do
   sleep 0.25
   play :fs4
   sleep 0.25
-  play 55
+  play :g3
   sleep 0.75
   play :e4
   sleep 0.25
@@ -227,6 +238,175 @@ end
 define :pattern21 do
   play :fs4, release: 3
   sleep 3
+end
+
+define :pattern22 do
+  play :b4, release: 1.45
+  sleep 1.5
+  play :b4, release: 1.45
+  sleep 1.5
+  play :b4, release: 1.45
+  sleep 1.5
+  play :b4, release: 1.45
+  sleep 1.5
+  play :b4, release: 1.45
+  sleep 1.5
+  play :cs5, release: 1.45
+  sleep 1.5
+  play :d5, release: 1.45
+  sleep 1.5
+  play :e5, release: 1.45
+  sleep 1.5
+  play :fs5, release: 0.45
+  sleep 0.5
+end
+
+define :pattern23 do
+  play :b4, release: 0.45
+  sleep 0.5
+  play :cs5, release: 1.45
+  sleep 1.5
+  play :cs5, release: 1.45
+  sleep 1.5
+  play :cs5, release: 1.45
+  sleep 1.5
+  play :cs5, release: 1.45
+  sleep 1.5
+  play :cs5, release: 1.45
+  sleep 1.5
+  play :d5, release: 1.45
+  sleep 1.5
+  play :e5, release: 1.45
+  sleep 1.5
+  play :fs5, release: 1.45
+  sleep 1.5
+end
+
+define :pattern24 do
+  play :e4, release: 0.5
+  sleep 0.5
+  play :fs4, release: 0.5
+  sleep 0.5
+  play :g4, release: 1.5
+  sleep 1.5
+  play :g4, release: 1.5
+  sleep 1.5
+  play :g4, release: 1.5
+  sleep 1.5
+  play :g4, release: 1.5
+  sleep 1.5
+  play :g4, release: 1.5
+  sleep 1.5
+  play :a4, release: 1.5
+  sleep 1.5
+  play :b4, release: 0.25
+  sleep 0.5
+end
+
+define :pattern25 do
+  play :e3, release: 0.5
+  sleep 0.5
+  play :fs3, release: 0.5
+  sleep 0.5
+  play :g3, release: 0.5
+  sleep 0.5
+  play :a3, release: 1.5
+  sleep 1.5
+  play :a3, release: 1.5
+  sleep 1.5
+  play :a3, release: 1.5
+  sleep 1.5
+  play :a3, release: 1.5
+  sleep 1.5
+  play :a3, release: 1.5
+  sleep 1.5
+  play :b3, release: 1.5
+  sleep 1.5
+end
+
+define :pattern26 do
+  play :e3, release: 0.5
+  sleep 0.5
+  play :fs3, release: 0.5
+  sleep 0.5
+  play :g3, release: 0.5
+  sleep 0.5
+  play :a3, release: 0.5
+  sleep 0.5
+  play :b3, release: 1.5
+  sleep 1.5
+  play :b3, release: 1.5
+  sleep 1.5
+  play :b3, release: 1.5
+  sleep 1.5
+  play :b3, release: 1.5
+  sleep 1.5
+  play :b3, release: 1.5
+  sleep 1.5
+end
+
+define :pattern27 do
+  play :e4, release: 0.25
+  sleep 0.25
+  play :fs4, release: 0.25
+  sleep 0.25
+  play :e4, release: 0.25
+  sleep 0.25
+  play :fs4, release: 0.25
+  sleep 0.25
+  play :g4, release: 0.5
+  sleep 0.5
+  play :e4, release: 0.25
+  sleep 0.25
+  play :g4, release: 0.25
+  sleep 0.25
+  play :fs4, release: 0.25
+  sleep 0.25
+  play :e4, release: 0.25
+  sleep 0.25
+  play :fs4, release: 0.25
+  sleep 0.25
+  play :e4, release: 0.25
+  sleep 0.25
+end
+
+define :pattern28 do
+  play :e4, release: 0.25
+  sleep 0.25
+  play :fs4, release: 0.25
+  sleep 0.25
+  play :e4, release: 0.25
+  sleep 0.25
+  play :fs4, release: 0.25
+  sleep 0.25
+  play :e4, release: 0.75
+  sleep 0.75
+  play :e4, release: 0.25
+  sleep 0.25
+end
+
+define :pattern29 do
+  play :e4, release: 3.0
+  sleep 3.0
+  play :g4, release: 3.0
+  sleep 3.0
+  play :c5, release: 3.0
+  sleep 3.0
+end
+
+define :pattern31 do
+  play :g4, release: 0.25
+  sleep 0.25
+  play :f4, release: 0.25
+  sleep 0.25
+  play :g4, release: 0.25
+  sleep 0.25
+  play :b4, release: 0.25
+  sleep 0.25
+  play :g4, release: 0.25
+  sleep 0.25
+  play :b4, release: 0.25
+  sleep 1
 end
 
 define :pattern32 do
@@ -246,11 +426,223 @@ define :pattern32 do
   sleep 1.5
 end
 
+define :pattern34 do
+  play :g4, release: 0.25
+  sleep 0.25
+  play :f4, release: 0.25
+  sleep 1.5
+end
+
+define :pattern35 do
+  play :f4, release: 0.2
+  sleep 0.25
+  play :g4, release: 0.2
+  sleep 0.25
+  play :b4, release: 0.2
+  sleep 0.25
+  play :g4, release: 0.2
+  sleep 0.25
+  play :b4, release: 0.2
+  sleep 0.25
+  play :g4, release: 0.2
+  sleep 0.25
+  play :b4, release: 0.2
+  sleep 0.25
+  play :g4, release: 0.2
+  sleep 0.25
+  play :b4, release: 0.2
+  sleep 0.25
+  play :g4, release: 0.2
+  sleep 3.75
+  play :bb4, release:1
+  sleep 1
+  play :g5, release:3
+  sleep 3
+  play :a5, release: 0.3
+  sleep 0.5
+  play :g5, release:1
+  sleep 1
+  play :b5, release: 0.5
+  sleep 0.5
+  play :a5, release:1.5
+  sleep 1.5
+  play :g5, release: 0.5
+  sleep 0.5
+  play :e5, release:3
+  sleep 3
+  play :g5, release: 0.5
+  sleep 0.5
+  play :fs5, release:3.5
+  sleep 6
+  play :e5, release:2.5
+  sleep 2.5
+  play :f5, release:6
+  sleep 6
+end
+
+define :pattern36 do
+  play :f4, release: 0.25
+  sleep 0.25
+  play :g4, release: 0.25
+  sleep 0.25
+  play :b4, release: 0.25
+  sleep 0.25
+  play :f4, release: 0.25
+  sleep 0.25
+  play :b4, release: 0.25
+  sleep 0.25
+  play :f4, release: 0.25
+  sleep 0.25
+end
+
+define :pattern37 do
+  play :f4, release: 0.25
+  sleep 0.25
+  play :g4, release: 0.25
+  sleep 0.25
+end
+
+define :pattern38 do
+  play :f4, release: 0.25
+  sleep 0.25
+  play :g4, release: 0.25
+  sleep 0.25
+  play :b4, release: 0.25
+  sleep 0.25
+end
+
+define :pattern40 do
+  play :b3, release: 0.25
+  sleep 0.25
+  play :f3, release: 0.25
+  sleep 0.25
+end
+
+define :pattern41 do
+  play :b3, release: 0.25
+  sleep 0.25
+  play :g3, release: 0.25
+  sleep 0.25
+end
+
+define :pattern45 do
+  play :d5, release: 1
+  sleep 1
+  play :d5, release: 1
+  sleep 1
+  play :g4, release: 1
+  sleep 1
+end
+
+define :pattern46 do
+  play :g4, release: 0.25
+  sleep 0.25
+  play :d5, release: 0.25
+  sleep 0.25
+  play :e5, release: 0.25
+  sleep 0.25
+  play :d5, release: 0.25
+  sleep 0.25
+  sleep 0.5
+  play :g4, release: 0.5
+  sleep 0.5
+  sleep 0.5
+  play :g4, release: 0.5
+  sleep 0.5
+  sleep 0.5
+  play :g4, release: 0.5
+  sleep 0.5
+  play :g4, release: 0.25
+  sleep 0.25
+  play :d5, release: 0.25
+  sleep 0.25
+  play :e5, release: 0.25
+  sleep 0.25
+  play :d5, release: 0.25
+  sleep 0.25
+end
+
+define :pattern47 do
+  play :d5, release: 0.25
+  sleep 0.25
+  play :e5, release: 0.25
+  sleep 0.25
+  play :d5, release: 0.5
+  sleep 1
+end
+
+define :pattern48 do
+  play :g4, release: 6
+  sleep 6
+  play :g4, release: 4
+  sleep 4
+  play :f4, release: 5
+  sleep 5
+end
+
+define :pattern49 do
+  play :f4, release: 0.25
+  sleep 0.25
+  play :g4, release: 0.25
+  sleep 0.25
+  play :bb4, release: 0.25
+  sleep 0.25
+  play :g4, release: 0.25
+  sleep 0.25
+  play :bb4, release: 0.25
+  sleep 0.25
+  play :g4, release: 0.25
+  sleep 0.25
+end
+
+define :pattern50 do
+  play :c5, release: 0.2
+  sleep 0.25
+  play :d5, release: 0.2
+  sleep 0.25
+end
+
+define :pattern51 do
+  play :c5, release: 0.2
+  sleep 0.25
+  play :d5, release: 0.2
+  sleep 0.25
+  play :f5, release: 0.2
+  sleep 0.25
+end
+
+define :pattern52 do
+  play :g4, release: 0.25
+  sleep 0.25
+  play :bb4, release: 0.25
+  sleep 0.25
+end
+
+define :pattern53 do
+  play :bb4, release: 0.25
+  sleep 0.25
+  play :g4, release: 0.25
+  sleep 0.25
+end
+
+
+
+
 # -----
 # collect usable synths here
 
-# use_synth :saw
+# use_synth :blade
+# use_synth :growl
+# use_synth :hollow
+# use_synth :hoover
+# use_synth :kalimba
+# use_synth :pretty_bell
 # use_synth :prophet
+# use_synth :roder
+# use_synth :saw
+# use_synth :tb303
+# use_synth :tech_saws
+# use_synth :winwood_lead
 
 # -----
 # define variables here
