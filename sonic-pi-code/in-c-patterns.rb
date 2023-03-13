@@ -3,9 +3,9 @@ eighth = 0.25
 
 # pre-define patterns
 
-define :pulse do
-  play :c4, release: eighth
-  play :c5, release: eighth
+define :pulse do |r = 1, o = 0|
+  play :c4 + o*12, release: eighth*r
+  play :c5 + o*12, release: eighth*r
   sleep eighth
 end
 
