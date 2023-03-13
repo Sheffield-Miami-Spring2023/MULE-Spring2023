@@ -1,5 +1,7 @@
 # note-length variables
+sixteenth = 0.125
 eighth = 0.25
+quarter = 0.5
 
 # pre-define patterns
 
@@ -9,611 +11,611 @@ define :pulse do |r = 1, o = 0|
   sleep eighth
 end
 
-define :pattern1 do
-  play :c4, release: 0.1
-  sleep 0.05
-  play :e4, release: 0.9
-  sleep 0.95
-  play :c4, release: 0.1
-  sleep 0.05
-  play :e4, release: 0.9
-  sleep 0.95
-  play :c4, release: 0.1
-  sleep 0.05
-  play :e4, release: 0.9
-  sleep 0.95
+define :pattern1 do |r = 1, o = 0|
+  play :c4 + o*12, release: quarter*0.1*r
+  sleep quarter*0.1
+  play :e4 + o*12, release: quarter*0.9*r
+  sleep quarter*0.9
+  play :c4 + o*12, release: 0.1*r
+  sleep quarter*0.1
+  play :e4 + o*12, release: quarter*0.9*r
+  sleep quarter*0.9
+  play :c4 + o*12, release: 0.1*r
+  sleep quarter*0.1
+  play :e4 + o*12, release: quarter*0.9*r
+  sleep quarter*0.9
 end
 
-define :pattern2 do
-  play :c4, release: 0.1
-  sleep 0.05
-  play :e4, release: 0.45
-  sleep 0.45
-  play :f4, release: 0.5
-  sleep 0.5
-  play :e4, release:1
+define :pattern2 do |r = 1, o = 0|
+  play :c4 + o*12, release: eight*0.1*r
+  sleep eighth*0.1
+  play :e4 + o*12, release: eighth*0.9*r
+  sleep eighth*0.9
+  play :f4 + o*12, release: eighth*r
+  sleep eighth
+  play :e4 + o*12, release: quarter*r
   sleep 1
 end
 
-define :pattern3 do
-  sleep 0.5
-  play :e4, release: 0.5
-  sleep 0.5
-  play :f4, release: 0.5
-  sleep 0.5
-  play :e4, release: 0.5
-  sleep 0.5
+define :pattern3 do |r = 1, o = 0|
+  sleep eighth
+  play :e4 + o*12, release: eighth*r
+  sleep eighth
+  play :f4 + o*12, release: eighth*r
+  sleep eighth
+  play :e4 + o*12, release: eighth*r
+  sleep eighth
 end
 
-define :pattern4 do
-  sleep 0.5
-  play :e4, release: 0.5
-  sleep 0.5
-  play :f4, release: 0.5
-  sleep 0.5
-  play :g4, release: 0.5
-  sleep 0.5
+define :pattern4 do |r = 1, o = 0|
+  sleep eighth
+  play :e4 + o*12, release: eighth*r
+  sleep eighth
+  play :f4 + o*12, release: eighth*r
+  sleep eighth
+  play :g4 + o*12, release: eighth*r
+  sleep eighth
 end
 
-define :pattern5 do
-  play :e4, release: 0.5
-  sleep 0.5
-  play :f4, release: 0.5
-  sleep 0.5
-  play :g4, release: 0.5
-  sleep 1
+define :pattern5 do |r = 1, o = 0|
+  play :e4 + o*12, release: eighth*r
+  sleep eighth
+  play :f4 + o*12, release: eighth*r
+  sleep eighth
+  play :g4 + o*12, release: eighth*r
+  sleep quarter
 end
 
-define :pattern6 do
-  play :c5, release:4
-  sleep 4
+define :pattern6 do |r = 1, o = 0|
+  play :c5 + o*12, release: quarter*4*r
+  sleep quarter*4
 end
 
-define :pattern7 do
-  sleep 3.5
-  play :c4, release: 0.25
-  sleep 0.25
-  play :c4, release: 0.25
-  sleep 0.25
-  play :c4, release: 0.5
-  sleep 0.5
-  sleep 4.5
+define :pattern7 do |r = 1, o = 0|
+  sleep quarter*3.5
+  play :c4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :c4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :c4 + o*12, release: eighth*r
+  sleep eighth
+  sleep quarter*4.5
 end
 
-define :pattern8 do
-  play :g4, release:6
-  sleep 6
-  play :f4, release:4
-  sleep 4
+define :pattern8 do |r = 1, o = 0|
+  play :g4 + o*12, release: quarter*6*r
+  sleep quarter*6
+  play :f4 + o*12, release: quarter*4*r
+  sleep quarter*4
 end
 
-define :pattern9 do
-  play :b4, release: 0.25
-  sleep 0.25
-  play :g4, release: 0.25
-  sleep 3.75
+define :pattern9 do |r = 1, o = 0|
+  play :b4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: sixteenth*r
+  sleep quarter*3.75
 end
 
-define :pattern10 do
-  play :b4, release: 0.25
-  sleep 0.25
-  play :g4, release: 0.25
-  sleep 0.25
+define :pattern10 do |r = 1, o = 0|
+  play :b4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
 end
 
-define :pattern11 do
-  play :f4, release: 0.2
-  sleep 0.25
-  play :g4, release: 0.2
-  sleep 0.25
-  play :b4, release: 0.2
-  sleep 0.25
-  play :g4, release: 0.2
-  sleep 0.25
-  play :b4, release: 0.2
-  sleep 0.25
-  play :g4, release: 0.2
-  sleep 0.25
+define :pattern11 do |r = 1, o = 0|
+  play :f4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :b4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :b4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
 end
 
-define :pattern12 do
-  play :f4
-  sleep 0.5
-  play :g4
-  sleep 0.5
-  play :b4
-  sleep 2
-  play :c5
-  sleep 1
+define :pattern12 do |r = 1, o = 0|
+  play :f4 + o*12, release: eighth*r
+  sleep eighth
+  play :g4 + o*12, release: eighth*r
+  sleep eighth
+  play :b4 + o*12, release: eighth*r
+  sleep quarter*2
+  play :c5 + o*12, release: eighth*r
+  sleep quarter
 end
 
-define :pattern_13 do
-  play :b4
-  sleep 0.25
-  play :g4
-  sleep 0.75
-  play :g4
-  sleep 0.25
-  play :f4
-  sleep 0.25
-  play :g4
-  sleep 0.5
-  sleep 0.75
-  play :g4
-  sleep 3.25
+define :pattern_13 do |r = 1, o = 0|
+  play :b4, release: sixteenth*r
+  sleep sixteenth
+  play :g4, release: sixteenth*r
+  sleep quarter*0.75
+  play :g4, release: sixteenth*r
+  sleep sixteenth
+  play :f4, release: sixteenth*r
+  sleep sixteenth
+  play :g4, release: sixteenth*r
+  sleep eighth, release: eighth*r
+  sleep quarter*0.75
+  play :g4, release: sixteenth*r
+  sleep quarter*3.25
 end
 
-define :pattern14 do
-  play :c5
-  sleep 4
-  play :b4
-  sleep 4
-  play :g4
-  sleep 4
-  play :fs4
-  sleep 4
+define :pattern14 do |r = 1, o = 0|
+  play :c5, release: quarter*r
+  sleep quarter*4
+  play :b4, release: quarter*r
+  sleep quarter*4
+  play :g4, release: quarter*r
+  sleep quarter*4
+  play :fs4, release: quarter*r
+  sleep quarter*4
 end
 
-define :pattern15 do
-  play :g4, release: 0.25
-  sleep 0.25
-  sleep 3.75
+define :pattern15 do |r = 1, o = 0|
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  sleep quarter*3.75
 end
 
-define :pattern16 do
-  play :g4, release: 0.25
-  sleep 0.25
-  play :b4, release: 0.25
-  sleep 0.25
-  play :c5, release: 0.25
-  sleep 0.25
-  play :b4, release: 0.25
+define :pattern16 do |r = 1, o = 0|
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :b4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :c5 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :b4 + o*12, release: sixteenth*r
 end
 
-define :pattern17 do
-  play :b5, release: 0.2
-  sleep 0.25
-  play :c5, release: 0.2
-  sleep 0.25
-  play :b5, release: 0.2
-  sleep 0.25
-  play :c5, release: 0.2
-  sleep 0.25
-  play :b5, release: 0.2
-  sleep 0.25
-  sleep 0.25
+define :pattern17 do |r = 1, o = 0|
+  play :b5 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :c5 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :b5 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :c5 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :b5 + o*12, release: sixteenth*r
+  sleep sixteenth
+  sleep sixteenth
 end
 
-define :pattern18 do
-  play :e4, release: 0.2
-  sleep 0.25
-  play :fs4, release: 0.2
-  sleep 0.25
-  play :e4, release: 0.2
-  sleep 0.25
-  play :fs4, release: 0.2
-  sleep 0.25
-  play :e4, release: 0.7
-  sleep 0.75
-  play :e4, release: 0.2
-  sleep 0.25
+define :pattern18 do |r = 1, o = 0|
+  play :e4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :fs4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :e4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :fs4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :e4 + o*12, release: quarter*0.75*r
+  sleep quarter*0.75
+  play :e4 + o*12, release: sixteenth*r
+  sleep sixteenth
 end
 
-define :pattern19 do
-  sleep 1.5
-  play :g5
-  sleep 1.5
+define :pattern19 do |r = 1, o = 0|
+  sleep quarter*1.5
+  play :g5, release: quarter*1.5*r
+  sleep quarter*1.5
 end
 
-define :pattern20 do
-  play :e4
-  sleep 0.25
-  play :fs4
-  sleep 0.25
-  play :e4
-  sleep 0.25
-  play :fs4
-  sleep 0.25
-  play :g3
-  sleep 0.75
-  play :e4
-  sleep 0.25
-  play :fs4
-  sleep 0.25
-  play :e4
-  sleep 0.25
-  play :fs4
-  sleep 0.25
-  play :e4
-  sleep 0.25
+define :pattern20 do |r = 1, o = 0|
+  play :e4, release: sixteenth*r
+  sleep sixteenth
+  play :fs4, release: sixteenth*r
+  sleep sixteenth
+  play :e4, release: sixteenth*r
+  sleep sixteenth
+  play :fs4, release: sixteenth*r
+  sleep sixteenth
+  play :g3, release: sixteenth*r
+  sleep quarter*0.75
+  play :e4, release: sixteenth*r
+  sleep sixteenth
+  play :fs4, release: sixteenth*r
+  sleep sixteenth
+  play :e4, release: sixteenth*r
+  sleep sixteenth
+  play :fs4, release: sixteenth*r
+  sleep sixteenth
+  play :e4, release: sixteenth*r
+  sleep sixteenth
 end
 
-define :pattern21 do
-  play :fs4, release: 3
-  sleep 3
+define :pattern21 do |r = 1, o = 0|
+  play :fs4 + o*12, release: quarter*3*r
+  sleep quarter*3
 end
 
-define :pattern22 do
-  play :b4, release: 1.45
-  sleep 1.5
-  play :b4, release: 1.45
-  sleep 1.5
-  play :b4, release: 1.45
-  sleep 1.5
-  play :b4, release: 1.45
-  sleep 1.5
-  play :b4, release: 1.45
-  sleep 1.5
-  play :cs5, release: 1.45
-  sleep 1.5
-  play :d5, release: 1.45
-  sleep 1.5
-  play :e5, release: 1.45
-  sleep 1.5
-  play :fs5, release: 0.45
-  sleep 0.5
+define :pattern22 do |r = 1, o = 0|
+  play :b4 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :b4 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :b4 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :b4 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :b4 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :cs5 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :d5 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :e5 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :fs5 + o*12, release: eighth*r
+  sleep eighth
 end
 
-define :pattern23 do
-  play :b4, release: 0.45
-  sleep 0.5
-  play :cs5, release: 1.45
-  sleep 1.5
-  play :cs5, release: 1.45
-  sleep 1.5
-  play :cs5, release: 1.45
-  sleep 1.5
-  play :cs5, release: 1.45
-  sleep 1.5
-  play :cs5, release: 1.45
-  sleep 1.5
-  play :d5, release: 1.45
-  sleep 1.5
-  play :e5, release: 1.45
-  sleep 1.5
-  play :fs5, release: 1.45
-  sleep 1.5
+define :pattern23 do |r = 1, o = 0|
+  play :b4 + o*12, release: eighth*r
+  sleep eighth
+  play :cs5 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :cs5 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :cs5 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :cs5 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :cs5 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :d5 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :e5 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :fs5 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
 end
 
-define :pattern24 do
-  play :e4, release: 0.5
-  sleep 0.5
-  play :fs4, release: 0.5
-  sleep 0.5
-  play :g4, release: 1.5
-  sleep 1.5
-  play :g4, release: 1.5
-  sleep 1.5
-  play :g4, release: 1.5
-  sleep 1.5
-  play :g4, release: 1.5
-  sleep 1.5
-  play :g4, release: 1.5
-  sleep 1.5
-  play :a4, release: 1.5
-  sleep 1.5
-  play :b4, release: 0.25
-  sleep 0.5
+define :pattern24 do |r = 1, o = 0|
+  play :e4 + o*12, release: eighth*r
+  sleep eighth
+  play :fs4 + o*12, release: eighth*r
+  sleep eighth
+  play :g4 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :g4 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :g4 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :g4 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :g4 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :a4 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :b4 + o*12, release: sixteenth*r
+  sleep eighth
 end
 
-define :pattern25 do
-  play :e3, release: 0.5
-  sleep 0.5
-  play :fs3, release: 0.5
-  sleep 0.5
-  play :g3, release: 0.5
-  sleep 0.5
-  play :a3, release: 1.5
-  sleep 1.5
-  play :a3, release: 1.5
-  sleep 1.5
-  play :a3, release: 1.5
-  sleep 1.5
-  play :a3, release: 1.5
-  sleep 1.5
-  play :a3, release: 1.5
-  sleep 1.5
-  play :b3, release: 1.5
-  sleep 1.5
+define :pattern25 do |r = 1, o = 0|
+  play :e3, release: eighth*r
+  sleep eighth
+  play :fs3, release: eighth*r
+  sleep eighth
+  play :g3, release: eighth*r
+  sleep eighth
+  play :a3, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :a3, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :a3, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :a3, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :a3, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :b3, release: quarter*1.5*r
+  sleep quarter*1.5
 end
 
-define :pattern26 do
-  play :e3, release: 0.5
-  sleep 0.5
-  play :fs3, release: 0.5
-  sleep 0.5
-  play :g3, release: 0.5
-  sleep 0.5
-  play :a3, release: 0.5
-  sleep 0.5
-  play :b3, release: 1.5
-  sleep 1.5
-  play :b3, release: 1.5
-  sleep 1.5
-  play :b3, release: 1.5
-  sleep 1.5
-  play :b3, release: 1.5
-  sleep 1.5
-  play :b3, release: 1.5
-  sleep 1.5
+define :pattern26 do |r = 1, o = 0|
+  play :e3, release: eighth*r
+  sleep eighth
+  play :fs3, release: eighth*r
+  sleep eighth
+  play :g3, release: eighth*r
+  sleep eighth
+  play :a3, release: eighth*r
+  sleep eighth
+  play :b3, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :b3, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :b3, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :b3, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :b3, release: quarter*1.5*r
+  sleep quarter*1.5
 end
 
-define :pattern27 do
-  play :e4, release: 0.25
-  sleep 0.25
-  play :fs4, release: 0.25
-  sleep 0.25
-  play :e4, release: 0.25
-  sleep 0.25
-  play :fs4, release: 0.25
-  sleep 0.25
-  play :g4, release: 0.5
-  sleep 0.5
-  play :e4, release: 0.25
-  sleep 0.25
-  play :g4, release: 0.25
-  sleep 0.25
-  play :fs4, release: 0.25
-  sleep 0.25
-  play :e4, release: 0.25
-  sleep 0.25
-  play :fs4, release: 0.25
-  sleep 0.25
-  play :e4, release: 0.25
-  sleep 0.25
+define :pattern27 do |r = 1, o = 0|
+  play :e4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :fs4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :e4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :fs4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: eighth*r
+  sleep eighth
+  play :e4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :fs4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :e4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :fs4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :e4 + o*12, release: sixteenth*r
+  sleep sixteenth
 end
 
-define :pattern28 do
-  play :e4, release: 0.25
-  sleep 0.25
-  play :fs4, release: 0.25
-  sleep 0.25
-  play :e4, release: 0.25
-  sleep 0.25
-  play :fs4, release: 0.25
-  sleep 0.25
-  play :e4, release: 0.75
-  sleep 0.75
-  play :e4, release: 0.25
-  sleep 0.25
+define :pattern28 do |r = 1, o = 0|
+  play :e4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :fs4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :e4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :fs4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :e4 + o*12, release: quarter*0.75*r
+  sleep quarter*0.75
+  play :e4 + o*12, release: sixteenth*r
+  sleep sixteenth
 end
 
-define :pattern29 do
-  play :e4, release: 3.0
-  sleep 3.0
-  play :g4, release: 3.0
-  sleep 3.0
-  play :c5, release: 3.0
-  sleep 3.0
+define :pattern29 do |r = 1, o = 0|
+  play :e4 + o*12, release: quarter*3*r
+  sleep quarter*3
+  play :g4 + o*12, release: quarter*3*r
+  sleep quarter*3
+  play :c5 + o*12, release: quarter*3*r
+  sleep quarter*3
 end
 
-define :pattern31 do
-  play :g4, release: 0.25
-  sleep 0.25
-  play :f4, release: 0.25
-  sleep 0.25
-  play :g4, release: 0.25
-  sleep 0.25
-  play :b4, release: 0.25
-  sleep 0.25
-  play :g4, release: 0.25
-  sleep 0.25
-  play :b4, release: 0.25
-  sleep 1
+define :pattern31 do |r = 1, o = 0|
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :f4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :b4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :b4 + o*12, release: sixteenth*r
+  sleep quarter
 end
 
-define :pattern32 do
-  play :f4, release: 0.25
-  sleep 0.25
-  play :g4, release: 0.25
-  sleep 0.25
-  play :f4, release: 0.25
-  sleep 0.25
-  play :g4, release: 0.25
-  sleep 0.25
-  play :b4, release: 0.25
-  sleep 0.25
-  play :f4, release: 3.25
-  sleep 3.25
-  play :g4, release: 1.5
-  sleep 1.5
+define :pattern32 do |r = 1, o = 0|
+  play :f4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :f4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :b4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :f4 + o*12, release: quarter*3.25*r
+  sleep quarter*3.25
+  play :g4 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
 end
 
-define :pattern34 do
-  play :g4, release: 0.25
-  sleep 0.25
-  play :f4, release: 0.25
-  sleep 1.5
+define :pattern34 do |r = 1, o = 0|
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :f4 + o*12, release: sixteenth*r
+  sleep quarter*1.5
 end
 
-define :pattern35 do
-  play :f4, release: 0.2
-  sleep 0.25
-  play :g4, release: 0.2
-  sleep 0.25
-  play :b4, release: 0.2
-  sleep 0.25
-  play :g4, release: 0.2
-  sleep 0.25
-  play :b4, release: 0.2
-  sleep 0.25
-  play :g4, release: 0.2
-  sleep 0.25
-  play :b4, release: 0.2
-  sleep 0.25
-  play :g4, release: 0.2
-  sleep 0.25
-  play :b4, release: 0.2
-  sleep 0.25
-  play :g4, release: 0.2
-  sleep 3.75
-  play :bb4, release:1
-  sleep 1
-  play :g5, release:3
-  sleep 3
-  play :a5, release: 0.3
-  sleep 0.5
-  play :g5, release:1
-  sleep 1
-  play :b5, release: 0.5
-  sleep 0.5
-  play :a5, release:1.5
-  sleep 1.5
-  play :g5, release: 0.5
-  sleep 0.5
-  play :e5, release:3
-  sleep 3
-  play :g5, release: 0.5
-  sleep 0.5
-  play :fs5, release:3.5
-  sleep 6
-  play :e5, release:2.5
-  sleep 2.5
-  play :f5, release:6
-  sleep 6
+define :pattern35 do |r = 1, o = 0|
+  play :f4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :b4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :b4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :b4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :b4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: sixteenth*r
+  sleep quarter*3.75
+  play :bb4 + o*12, release: quarter*r
+  sleep quarter
+  play :g5 + o*12, release: quarter*3*r
+  sleep quarter*3
+  play :a5 + o*12, release: eighth*r
+  sleep eighth
+  play :g5 + o*12, release: quarter*r
+  sleep quarter
+  play :b5 + o*12, release: eighth*r
+  sleep eighth
+  play :a5 + o*12, release: quarter*1.5*r
+  sleep quarter*1.5
+  play :g5 + o*12, release: eighth*r
+  sleep eighth
+  play :e5 + o*12, release: quarter*3*r
+  sleep quarter*3
+  play :g5 + o*12, release: eighth*r
+  sleep eighth
+  play :fs5 + o*12, release: quarter*3.5*r
+  sleep quarter*6
+  play :e5 + o*12, release: quarter*2.5*r
+  sleep quarter*2.5
+  play :f5 + o*12, release: quarter*6*r
+  sleep quarter*6
 end
 
-define :pattern36 do
-  play :f4, release: 0.25
-  sleep 0.25
-  play :g4, release: 0.25
-  sleep 0.25
-  play :b4, release: 0.25
-  sleep 0.25
-  play :f4, release: 0.25
-  sleep 0.25
-  play :b4, release: 0.25
-  sleep 0.25
-  play :f4, release: 0.25
-  sleep 0.25
+define :pattern36 do |r = 1, o = 0|
+  play :f4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :b4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :f4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :b4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :f4 + o*12, release: sixteenth*r
+  sleep sixteenth
 end
 
-define :pattern37 do
-  play :f4, release: 0.25
-  sleep 0.25
-  play :g4, release: 0.25
-  sleep 0.25
+define :pattern37 do |r = 1, o = 0|
+  play :f4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
 end
 
-define :pattern38 do
-  play :f4, release: 0.25
-  sleep 0.25
-  play :g4, release: 0.25
-  sleep 0.25
-  play :b4, release: 0.25
-  sleep 0.25
+define :pattern38 do |r = 1, o = 0|
+  play :f4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :b4 + o*12, release: sixteenth*r
+  sleep sixteenth
 end
 
-define :pattern40 do
-  play :b3, release: 0.25
-  sleep 0.25
-  play :f3, release: 0.25
-  sleep 0.25
+define :pattern40 do |r = 1, o = 0|
+  play :b3, release: sixteenth*r
+  sleep sixteenth
+  play :f3, release: sixteenth*r
+  sleep sixteenth
 end
 
-define :pattern41 do
-  play :b3, release: 0.25
-  sleep 0.25
-  play :g3, release: 0.25
-  sleep 0.25
+define :pattern41 do |r = 1, o = 0|
+  play :b3, release: sixteenth*r
+  sleep sixteenth
+  play :g3, release: sixteenth*r
+  sleep sixteenth
 end
 
-define :pattern45 do
-  play :d5, release: 1
-  sleep 1
-  play :d5, release: 1
-  sleep 1
-  play :g4, release: 1
-  sleep 1
+define :pattern45 do |r = 1, o = 0|
+  play :d5 + o*12, release: quarter*r
+  sleep quarter
+  play :d5 + o*12, release: quarter*r
+  sleep quarter
+  play :g4 + o*12, release: quarter*r
+  sleep quarter
 end
 
-define :pattern46 do
-  play :g4, release: 0.25
-  sleep 0.25
-  play :d5, release: 0.25
-  sleep 0.25
-  play :e5, release: 0.25
-  sleep 0.25
-  play :d5, release: 0.25
-  sleep 0.25
-  sleep 0.5
-  play :g4, release: 0.5
-  sleep 0.5
-  sleep 0.5
-  play :g4, release: 0.5
-  sleep 0.5
-  sleep 0.5
-  play :g4, release: 0.5
-  sleep 0.5
-  play :g4, release: 0.25
-  sleep 0.25
-  play :d5, release: 0.25
-  sleep 0.25
-  play :e5, release: 0.25
-  sleep 0.25
-  play :d5, release: 0.25
-  sleep 0.25
+define :pattern46 do |r = 1, o = 0|
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :d5 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :e5 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :d5 + o*12, release: sixteenth*r
+  sleep sixteenth
+  sleep eighth
+  play :g4 + o*12, release: eighth*r
+  sleep eighth
+  sleep eighth
+  play :g4 + o*12, release: eighth*r
+  sleep eighth
+  sleep eighth
+  play :g4 + o*12, release: eighth*r
+  sleep eighth
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :d5 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :e5 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :d5 + o*12, release: sixteenth*r
+  sleep sixteenth
 end
 
-define :pattern47 do
-  play :d5, release: 0.25
-  sleep 0.25
-  play :e5, release: 0.25
-  sleep 0.25
-  play :d5, release: 0.5
-  sleep 1
+define :pattern47 do |r = 1, o = 0|
+  play :d5 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :e5 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :d5 + o*12, release: eighth*r
+  sleep quarter
 end
 
-define :pattern48 do
-  play :g4, release: 6
-  sleep 6
-  play :g4, release: 4
-  sleep 4
-  play :f4, release: 5
-  sleep 5
+define :pattern48 do |r = 1, o = 0|
+  play :g4 + o*12, release: quarter*6*r
+  sleep quarter*6
+  play :g4 + o*12, release: quarter*4*r
+  sleep quarter*4
+  play :f4 + o*12, release: quarter*5*r
+  sleep quarter*5
 end
 
-define :pattern49 do
-  play :f4, release: 0.25
-  sleep 0.25
-  play :g4, release: 0.25
-  sleep 0.25
-  play :bb4, release: 0.25
-  sleep 0.25
-  play :g4, release: 0.25
-  sleep 0.25
-  play :bb4, release: 0.25
-  sleep 0.25
-  play :g4, release: 0.25
-  sleep 0.25
+define :pattern49 do |r = 1, o = 0|
+  play :f4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :bb4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :bb4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
 end
 
-define :pattern50 do
-  play :c5, release: 0.2
-  sleep 0.25
-  play :d5, release: 0.2
-  sleep 0.25
+define :pattern50 do |r = 1, o = 0|
+  play :c5 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :d5 + o*12, release: sixteenth*r
+  sleep sixteenth
 end
 
-define :pattern51 do
-  play :c5, release: 0.2
-  sleep 0.25
-  play :d5, release: 0.2
-  sleep 0.25
-  play :f5, release: 0.2
-  sleep 0.25
+define :pattern51 do |r = 1, o = 0|
+  play :c5 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :d5 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :f5 + o*12, release: sixteenth*r
+  sleep sixteenth
 end
 
-define :pattern52 do
-  play :g4, release: 0.25
-  sleep 0.25
-  play :bb4, release: 0.25
-  sleep 0.25
+define :pattern52 do |r = 1, o = 0|
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :bb4 + o*12, release: sixteenth*r
+  sleep sixteenth
 end
 
-define :pattern53 do
-  play :bb4, release: 0.25
-  sleep 0.25
-  play :g4, release: 0.25
-  sleep 0.25
+define :pattern53 do |r = 1, o = 0|
+  play :bb4 + o*12, release: sixteenth*r
+  sleep sixteenth
+  play :g4 + o*12, release: sixteenth*r
+  sleep sixteenth
 end
