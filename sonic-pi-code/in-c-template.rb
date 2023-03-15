@@ -1,10 +1,31 @@
-# to-do 3/13
-# finish patterns???
-# check pattern pitch accuracy
-# implement octave shift
-# work on other variables e.g. release times, note durations
-# figure out how to sync 1/8 note pulse instead of 1/16 note
+# to-do 3/15
+# finish remaining patterns and check all for accuracy
+# improve sync
 
+# ----
+# load patterns, change the path name to match the location of the patterns file on your laptop
+# save this path somewhere else so that you don't have to retype every time!
+run_file "~/GitHub/Spring2023-Miami/MULE-Spring2023/sonic-pi-code/in-c-patterns.rb"
+sleep 1
+
+
+live_loop :my_pattern do
+  # global volume can be changed here - do not exceed 1!!!
+  set_volume! 1
+  
+  # set synth and synth settings here
+  # use the Synths reference to see the available parameters for different synths
+  use_synth :beep
+  use_synth_defaults
+  
+  # currently missing patterns 30, 33, 39, 42-44
+  # values after pattern name are release time (0-1) and octave shift
+  pattern1 1, 0
+  
+  # use command-R on Mac or control-R on Windows keyboard shortcut to run
+  # listen closely to your rhythmic pattern and use the time warp to adjust if needed
+  # you might need to do this multiple times throughout the performance
+end
 
 # -----
 # collect usable synths here
@@ -21,23 +42,3 @@
 # :saw
 # :tb303
 # :tech_saws
-
-# ----
-# load patterns
-run_file "~/GitHub/Spring2023-Miami/MULE-Spring2023/sonic-pi-code/in-c-patterns.rb"
-
-# ----
-# global volume can be changed with set_volume! - do not exceed 1!!!
-# synth can be changed by copying one of the preselected options above and pasting after use_synth
-# synth parameters can be changed by entering values after use_synth_defaults
-# use the Synths reference to see the available parameters
-# additional optional paramaters after pattern name are release time (0-1) and octave shift
-# change pattern name and click "run" to loop a new pattern
-
-live_loop :my_pattern do
-  set_volume! 1
-  use_synth :beep
-  use_synth_defaults
-  pulse
-  # pattern32
-end
