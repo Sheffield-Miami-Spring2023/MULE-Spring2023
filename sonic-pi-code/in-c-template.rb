@@ -1,13 +1,10 @@
-# to-do 3/15
-# finish remaining patterns and check all for accuracy
+# to-do 3/27
 # improve sync
 
 # ----
 # load patterns, change the path name to match the location of the patterns file on your laptop
 # save this path somewhere else so that you don't have to retype every time!
 run_file "~/GitHub/Spring2023-Miami/MULE-Spring2023/sonic-pi-code/in-c-patterns.rb"
-sleep 1
-
 
 live_loop :my_pattern do
   # global volume can be changed here - do not exceed 1!!!
@@ -18,7 +15,6 @@ live_loop :my_pattern do
   use_synth :beep
   use_synth_defaults
   
-  # currently missing patterns 30, 33, 39, 42-44
   # values after pattern name are release time (0-1) and octave shift
   pattern1 1, 0
   
