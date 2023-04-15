@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 2,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 42.0, 85.0, 1382.0, 953.0 ],
+		"rect" : [ 34.0, 62.0, 1372.0, 804.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,55 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-109",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 332.219814076375997, 26.402546703836947, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-77",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 137.0, 1956.0, 74.0, 22.0 ],
+					"text" : "mc.unpack~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-65",
+					"index" : 0,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 183.433930134650723, 2009.283581018775521, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-61",
+					"index" : 0,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 137.0, 2009.283581018775521, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-60",
 					"maxclass" : "newobj",
@@ -392,7 +441,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -724,7 +773,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 9,
 					"outlettype" : [ "int", "int", "float", "float", "float", "", "int", "float", "" ],
-					"patching_rect" : [ 957.606823993244348, 227.596170686568257, 132.898351728916168, 36.0 ],
+					"patching_rect" : [ 957.606823993244348, 227.596170686568257, 132.898351728916168, 35.0 ],
 					"text" : "transport @name reading @tempo 20"
 				}
 
@@ -944,10 +993,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 567.204634494757556, 519.481157385501888, 78.0, 75.0 ],
+					"patching_rect" : [ 567.204634494757556, 519.481157385501888, 78.0, 74.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 6,
-					"presentation_rect" : [ 202.382716342806816, 186.5, 69.36544518917799, 75.0 ],
+					"presentation_rect" : [ 202.382716342806816, 186.5, 69.36544518917799, 74.0 ],
 					"text" : "faster movements require more smoothing (nodes or knob)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1
@@ -1037,7 +1086,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1481,31 +1530,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.094117647058824, 0.094117647058824, 0.094117647058824, 0.588235294117647 ],
-					"fontlink" : 1,
-					"fontname" : "Ableton Sans Small",
-					"fontsize" : 12.0,
-					"id" : "obj-16",
-					"maxclass" : "textbutton",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 147.726203385063201, 1934.222510099738656, 64.912002563476562, 22.40000057220459 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 110.168338313698769, 149.782088241796373, 64.912002563476562, 22.40000057220459 ],
-					"rounded" : 7.42,
-					"text" : "DSP OFF",
-					"textcolor" : [ 0.337254901960784, 0.309803921568627, 0.529411764705882, 0.501960784313725 ],
-					"texton" : "DSP ON",
-					"textoncolor" : [ 0.698039215686274, 0.650980392156863, 1.0, 1.0 ],
-					"textovercolor" : [ 0.396078431372549, 0.776470588235294, 0.552941176470588, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"appearance" : 2,
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 0.0 ],
 					"focusbordercolor" : [ 0.313725490196078, 0.313725490196078, 0.313725490196078, 0.0 ],
@@ -1594,13 +1618,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-105",
-					"linecount" : 8,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 47.001564745681776, 786.932831757431018, 124.229923955130658, 119.0 ],
-					"text" : "0.501944 0.441214 0.763831 0.517632 0.386921 0.40879 0.780425 0.804318 0.336954 0.477606 0.328611 0.50112 0.657243 0.291992 0.424959 0.315847"
+					"patching_rect" : [ 47.001564745681776, 786.932831757431018, 124.229923955130658, 35.0 ],
+					"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0."
 				}
 
 			}
@@ -1619,13 +1643,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-95",
-					"linecount" : 8,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 315.169957330060242, 786.932831757431018, 128.224280192797494, 119.0 ],
-					"text" : "0.410456 0.342042 0.806145 0.287383 0.526483 0.679187 0.612246 0.75771 0.523901 0.929598 0.575615 0.937459 0.392697 0.730978 0.334188 0.565351"
+					"patching_rect" : [ 315.169957330060242, 786.932831757431018, 128.224280192797494, 35.0 ],
+					"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0."
 				}
 
 			}
@@ -1762,7 +1786,7 @@
 					"numinlets" : 16,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 213.301312252235391, 417.554605249681458, 138.0, 36.0 ],
+					"patching_rect" : [ 213.301312252235391, 417.554605249681458, 138.0, 35.0 ],
 					"text" : "pak 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0."
 				}
 
@@ -1832,7 +1856,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1879,7 +1903,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2039,7 +2063,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2223,7 +2247,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3144,7 +3168,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 526.430407200680179, 916.153169599420607, 121.0, 36.0 ],
+					"patching_rect" : [ 526.430407200680179, 916.153169599420607, 121.0, 35.0 ],
 					"text" : "text 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15"
 				}
 
@@ -3293,7 +3317,7 @@
 					"fontname" : "Ableton Sans Small",
 					"id" : "obj-164",
 					"keymode" : 1,
-					"linecount" : 6,
+					"linecount" : 5,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -3315,10 +3339,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 749.451981283395412, 1061.861169319276769, 201.0, 75.0 ],
+					"patching_rect" : [ 749.451981283395412, 1061.861169319276769, 201.0, 74.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 977.481469795107841, 365.563868007879137, 313.0, 48.0 ],
+					"presentation_rect" : [ 977.481469795107841, 365.563868007879137, 313.0, 47.0 ],
 					"text" : "doing similar shapes repeatedly will interact with similar partials in a similar order with small changes over time, creating something like a motive. try it out!"
 				}
 
@@ -3391,10 +3415,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 377.909799321842229, 250.730047006504606, 313.069367200136185, 34.0 ],
+					"patching_rect" : [ 377.909799321842229, 250.730047006504606, 313.069367200136185, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 977.481469795107841, 108.374679765920519, 312.44444265961647, 34.0 ],
+					"presentation_rect" : [ 977.481469795107841, 108.374679765920519, 312.44444265961647, 33.0 ],
 					"text" : "troubleshooting: changes in fundamental have weird effects on partials when sound is held over a change"
 				}
 
@@ -3543,10 +3567,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 377.909799321842229, 127.266823136005428, 313.069367200136185, 89.0 ],
+					"patching_rect" : [ 377.909799321842229, 127.266823136005428, 313.069367200136185, 87.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 6,
-					"presentation_rect" : [ 977.481469795107841, 17.374679765920519, 312.111110746860504, 89.0 ],
+					"presentation_rect" : [ 977.481469795107841, 17.374679765920519, 312.111110746860504, 87.0 ],
 					"text" : "features to add:\n\nadd a subwoofer oscillator that goes as the fundamental proportional to the total volume of the track.\n\nadd a decibel meter for the input mic for levels"
 				}
 
@@ -3613,9 +3637,9 @@
 					"outlettype" : [ "", "", "int" ],
 					"outputmode" : 0,
 					"parameter_enable" : 0,
-					"patching_rect" : [ 298.596679930465712, 549.481157385501888, 46.936000823974609, 22.40000057220459 ],
+					"patching_rect" : [ 298.596679930465712, 549.481157385501888, 42.677734375, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 176.766566574573517, 149.782088241796373, 46.936000823974609, 22.40000057220459 ],
+					"presentation_rect" : [ 176.766566574573517, 149.782088241796373, 42.677734375, 20.0 ],
 					"rounded" : 7.42,
 					"text" : "reset",
 					"textcolor" : [ 0.337254901960784, 0.309803921568627, 0.529411764705882, 0.501960784313725 ],
@@ -3792,9 +3816,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 196.622652117984785, 1610.833887100234278, 96.652000427246094, 22.40000057220459 ],
+					"patching_rect" : [ 196.622652117984785, 1610.833887100234278, 97.1171875, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 9.62433959543705, 149.782088241796373, 96.652000427246094, 22.40000057220459 ],
+					"presentation_rect" : [ 9.62433959543705, 149.782088241796373, 97.1171875, 20.0 ],
 					"rounded" : 7.42,
 					"text" : "PANNING OFF",
 					"textcolor" : [ 0.337254901960784, 0.309803921568627, 0.529411764705882, 0.501960784313725 ],
@@ -3837,7 +3861,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4204,7 +4228,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 117.230769634246826, 166.0, 75.0, 50.0 ],
+									"patching_rect" : [ 117.230769634246826, 166.0, 75.0, 49.0 ],
 									"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0."
 								}
 
@@ -4747,18 +4771,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 380.437017922180189, 1294.861169319276769, 123.0, 89.0 ],
+					"patching_rect" : [ 380.437017922180189, 1294.861169319276769, 123.0, 87.0 ],
 					"text" : "reset movement of nodes,\nturn on sound,\nturn on webcam,\npress \"play\" (upcoming patch)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-40",
-					"maxclass" : "mc.ezdac~",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 147.726203385063201, 1966.283581018775521, 116.10093140602109, 116.100931406021118 ]
 				}
 
 			}
@@ -4770,7 +4784,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 24.028672400184689, 1881.283581018775521, 191.48854660987854, 36.0 ],
+					"patching_rect" : [ 24.028672400184689, 1881.283581018775521, 191.48854660987854, 35.0 ],
 					"text" : "mc.mixdown~ @activechans 16 @chans 2"
 				}
 
@@ -4855,7 +4869,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5236,7 +5250,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 380.437017922180189, 1055.861169319276769, 122.545454919338226, 131.0 ],
+					"patching_rect" : [ 380.437017922180189, 1055.861169319276769, 122.545454919338226, 127.0 ],
 					"text" : "all of the circles change direction at the same time. I will add in a little randomizer into the frequency of each node's random movement so it's not like that."
 				}
 
@@ -5249,7 +5263,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 315.054810059469219, 910.251980655555712, 57.282566785812378, 36.0 ],
+					"patching_rect" : [ 315.054810059469219, 910.251980655555712, 57.282566785812378, 35.0 ],
 					"text" : "prepend yplace"
 				}
 
@@ -5262,7 +5276,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 47.001564745681776, 910.251980655555712, 57.282566785812378, 36.0 ],
+					"patching_rect" : [ 47.001564745681776, 910.251980655555712, 57.282566785812378, 35.0 ],
 					"text" : "prepend xplace"
 				}
 
@@ -5289,7 +5303,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7335,7 +7349,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 380.437017922180189, 1192.861169319276769, 129.0, 89.0 ],
+					"patching_rect" : [ 380.437017922180189, 1192.861169319276769, 129.0, 87.0 ],
 					"text" : "efforts on the nodes manipulation (the text on the nodes is better viewed in a locked patcher bc the color is different."
 				}
 
@@ -7474,7 +7488,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7517,10 +7531,10 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 69.512196779251099, 100.000002384185791, 387.0, 40.0 ],
+									"patching_rect" : [ 69.512196779251099, 100.000002384185791, 387.0, 34.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 5,
-									"presentation_rect" : [ 6.097561120986938, 6.097561120986938, 184.0, 90.0 ],
+									"presentation_rect" : [ 6.097561120986938, 6.097561120986938, 184.0, 76.0 ],
 									"text" : "this patch takes up to 16  frequencies in a list and as inputs and outputs sine waves with those frequencies."
 								}
 
@@ -7789,7 +7803,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 674.782350170612517, 12.205496072769165, 82.0, 119.0 ],
+									"patching_rect" : [ 674.782350170612517, 12.205496072769165, 82.0, 116.0 ],
 									"text" : "110. 220. 330. 440. 550. 660. 770. 880. 990. 1100. 1210. 1320. 1430. 1540. 1650. 1760."
 								}
 
@@ -8801,7 +8815,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 377.909799321842229, 277.869901666593591, 313.340427547693253, 34.0 ],
+					"patching_rect" : [ 377.909799321842229, 277.869901666593591, 313.340427547693253, 33.0 ],
 					"text" : "The fundamental and the available partials will change independently of one another."
 				}
 
@@ -8903,7 +8917,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -9071,7 +9085,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 33.0, 603.34675121307373, 167.0, 48.0 ],
+									"patching_rect" : [ 33.0, 603.34675121307373, 167.0, 47.0 ],
 									"text" : "click-and-drag nodes to move\noption-drag / alt-drag to change node size"
 								}
 
@@ -9084,9 +9098,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 341.0, 15.552634596824646, 129.0, 25.0 ],
+									"patching_rect" : [ 341.0, 15.552634596824646, 129.0, 24.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 9.915509939193726, 11.115803897380829, 114.0, 25.0 ],
+									"presentation_rect" : [ 9.915509939193726, 11.115803897380829, 114.0, 24.0 ],
 									"text" : "MULE CamXY"
 								}
 
@@ -9277,9 +9291,9 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 311.0, 337.552634596824646, 63.0, 20.0 ],
+									"patching_rect" : [ 311.0, 337.552634596824646, 63.0, 18.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 9.915509939193726, 38.115803897380829, 81.580357317997141, 20.0 ],
+									"presentation_rect" : [ 9.915509939193726, 38.115803897380829, 81.580357317997141, 18.0 ],
 									"text_width" : 14.0,
 									"textjustification" : 1,
 									"varname" : "attrui"
@@ -9389,7 +9403,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -9676,7 +9690,7 @@
 								"box" : 								{
 									"fontsize" : 12.0,
 									"id" : "obj-31",
-									"items" : [ "Integrated Camera", ",", "Intel Virtual Camera", ",", "OBS Virtual Camera" ],
+									"items" : [ "FaceTime HD Camera", ",", "Eric Sheffield’s iPhone Camera" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -10074,7 +10088,7 @@
 					"maxclass" : "nodes",
 					"nodecolor" : [ 0.352941176470588, 1.0, 0.827450980392157, 0.34 ],
 					"nodenumber" : 16,
-					"nodesnames" : [ "A2_0", "A2_0", "A2_2", "A2_3", "A2_4", "A2_5", "A2_6", "A2_7", "A2_8", "A2_9", "A2_10", "A2_11", "A2_12", "A2_13", "A2_14", "A2_15" ],
+					"nodesnames" : [ "A2_0", "A2_1", "A2_2", "A2_3", "A2_4", "A2_5", "A2_6", "A2_7", "A2_8", "A2_9", "A2_10", "A2_11", "A2_12", "A2_13", "A2_14", "A2_15" ],
 					"nsize" : [ 0.220472440944882, 0.220472440944882, 0.220472440944882, 0.220472440944882, 0.220472440944882, 0.220472440944882, 0.220472440944882, 0.220472440944882, 0.220472440944882, 0.220472440944882, 0.220472440944882, 0.220472440944882, 0.220472440944882, 0.220472440944882, 0.220472440944882, 0.220472440944882 ],
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -10086,8 +10100,8 @@
 					"presentation_rect" : [ 277.592591688036919, 17.374679765920519, 695.888878107070923, 696.172830104827881 ],
 					"textcolor" : [ 0.831372549019608, 0.831372549019608, 0.831372549019608, 1.0 ],
 					"varname" : "nodes",
-					"xplace" : [ 0.504995723471616, 0.444037107941527, 0.759142360366853, 0.520279219082169, 0.389518534096687, 0.408669461641441, 0.775878559494525, 0.800028990578814, 0.338307346016499, 0.480170496142471, 0.329517713766139, 0.501563718428726, 0.660796391093562, 0.292695062409345, 0.423690249342526, 0.31776538724386 ],
-					"yplace" : [ 0.412939712941467, 0.342626123773987, 0.804014860357006, 0.287058381920694, 0.529710158629097, 0.673088425748597, 0.614596655152925, 0.758907419078797, 0.520954332822728, 0.929616051113598, 0.572995711513418, 0.93644395307873, 0.393258657585247, 0.73204833090843, 0.336001318821584, 0.565830268003766 ]
+					"xplace" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+					"yplace" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 				}
 
 			}
@@ -10132,7 +10146,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -10395,7 +10409,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 458.148759658474887, 519.288925886154175, 55.076922416687125, 22.0 ],
-									"text" : "A2_0"
+									"text" : "A2_1"
 								}
 
 							}
@@ -11228,7 +11242,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1160.825430759507071, 14.530342698097229, 330.0, 62.0 ],
+									"patching_rect" : [ 1160.825430759507071, 14.530342698097229, 330.0, 60.0 ],
 									"text" : "there is a problem with the join object where it stores the previous value-- looking for a way to clear the inputs? or maybe it actually reads upstream, in which case this doesn't work at all."
 								}
 
@@ -11282,10 +11296,10 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 0.358664274215698, 24.286440491676331, 338.0, 78.0 ],
+									"patching_rect" : [ 0.358664274215698, 24.286440491676331, 338.0, 66.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 4,
-									"presentation_rect" : [ -0.105262994766235, 0.181177496910095, 257.0, 102.0 ],
+									"presentation_rect" : [ -0.105262994766235, 0.181177496910095, 257.0, 86.0 ],
 									"text" : "This patch converts information about active pitches into directions for the nodes object."
 								}
 
@@ -11297,7 +11311,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1022.418730184248034, 14.530342698097229, 133.0, 89.0 ],
+									"patching_rect" : [ 1022.418730184248034, 14.530342698097229, 133.0, 87.0 ],
 									"style" : "redness",
 									"text" : "note that this object can be used for any other list management where one side of the list is universal and the other is individual"
 								}
@@ -11310,7 +11324,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 398.563372858972343, 14.530342698097229, 219.0, 34.0 ],
+									"patching_rect" : [ 398.563372858972343, 14.530342698097229, 219.0, 33.0 ],
 									"style" : "redness",
 									"text" : "Input for the fundamental frequency. updates everything when changed."
 								}
@@ -11323,7 +11337,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 657.094068747113738, 14.530342698097229, 257.814813673496246, 62.0 ],
+									"patching_rect" : [ 657.094068747113738, 14.530342698097229, 257.814813673496246, 60.0 ],
 									"style" : "redness",
 									"text" : "Input of the list of partials. \n\nBelow is a message to test all fo the outlets. Bang to send the test message."
 								}
@@ -11336,7 +11350,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 49.772769655937054, 126.808119893074036, 95.666667938232422, 75.0 ],
+									"patching_rect" : [ 49.772769655937054, 126.808119893074036, 95.666667938232422, 74.0 ],
 									"style" : "redness",
 									"text" : "outputs the list of note names that will be given to the nodes object."
 								}
@@ -11782,10 +11796,10 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 0.358664274215698, -3.213559508323669, 338.0, 234.0 ],
+									"patching_rect" : [ 0.358664274215698, -3.213559508323669, 338.0, 195.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 8,
-									"presentation_rect" : [ -9.105262994766235, -14.818822503089905, 420.530994798690188, 234.0 ],
+									"presentation_rect" : [ -9.105262994766235, -14.818822503089905, 420.530994798690188, 195.0 ],
 									"text" : "\n\n\n\n\n\n\n\n"
 								}
 
@@ -13472,22 +13486,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-39", 0 ],
-					"order" : 0,
-					"source" : [ "obj-16", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-40", 0 ],
-					"order" : 1,
-					"source" : [ "obj-16", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-45", 1 ],
 					"source" : [ "obj-165", 0 ]
 				}
@@ -13772,8 +13770,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-40", 0 ],
-					"midpoints" : [ 33.528672400184689, 2094.0, 133.0, 2094.0, 133.0, 1962.0, 157.226203385063201, 1962.0 ],
+					"destination" : [ "obj-77", 0 ],
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -14226,6 +14223,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-61", 0 ],
+					"source" : [ "obj-77", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-65", 0 ],
+					"source" : [ "obj-77", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-147", 0 ],
 					"source" : [ "obj-78", 0 ]
 				}
@@ -14656,35 +14667,31 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "MULE_subpatcher_list seleckta trigger.maxpat",
-				"bootpath" : "~/Dropbox/MiamiOH 2023/Composition/LAPTOP ENSEMBLE/MAX PATCHES/Light-Partials",
+				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches/Light-Partials",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MULE_subpatcher_nodecommands.maxpat",
-				"bootpath" : "~/Dropbox/MiamiOH 2023/Composition/LAPTOP ENSEMBLE/MAX PATCHES/Light-Partials",
+				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches/Light-Partials",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MULE_subpatcher_randcoord gen.maxpat",
-				"bootpath" : "~/Dropbox/MiamiOH 2023/Composition/LAPTOP ENSEMBLE/MAX PATCHES/Light-Partials",
+				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches/Light-Partials",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "double_ug_umenu_midinotename.maxpat",
-				"bootpath" : "~/Dropbox/MiamiOH 2023/Composition/LAPTOP ENSEMBLE/MAX PATCHES/Light-Partials",
+				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches/Light-Partials",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "jit.pass.mxe64",
-				"type" : "mx64"
 			}
 , 			{
 				"name" : "openTransport.maxpat",
