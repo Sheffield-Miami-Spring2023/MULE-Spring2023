@@ -11,8 +11,8 @@
 ,
 		"classnamespace" : "box",
 		"rect" : [ 34.0, 62.0, 1372.0, 804.0 ],
-		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"bglocked" : 1,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -39,6 +39,19 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 614.0, 307.0, 67.0, 22.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "message",
@@ -97,14 +110,14 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "_MULE_s2023_Light_Partials_MAIN_v1.4.maxpat",
+					"name" : "MULE_s2023_Light_Partials_MAIN_v1.4.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 136.5, 442.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 28.0, 1301.0, 766.0 ],
+					"presentation_rect" : [ 4.0, 28.0, 1300.0, 766.0 ],
 					"varname" : "light-partials",
 					"viewvisibility" : 1
 				}
@@ -118,7 +131,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 26.0, 761.0, 45.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1318.5, 725.0, 45.0, 45.0 ]
+					"presentation_rect" : [ 1306.0, 734.0, 60.0, 60.0 ]
 				}
 
 			}
@@ -133,13 +146,13 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 26.0, 598.0, 48.0, 136.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1317.0, 587.0, 48.0, 136.0 ],
+					"presentation_rect" : [ 1306.0, 565.0, 60.0, 180.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.gain~",
+							"parameter_longname" : "output",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
-							"parameter_shortname" : "live.gain~",
+							"parameter_shortname" : "output",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
 						}
@@ -288,7 +301,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 445.0, 442.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 28.0, 1301.0, 766.0 ],
+					"presentation_rect" : [ 4.0, 28.0, 1300.0, 766.0 ],
 					"varname" : "bassdrum",
 					"viewvisibility" : 1
 				}
@@ -428,12 +441,31 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 10.0, 10.0, 381.0, 29.0 ],
+					"patching_rect" : [ 4.0, 4.0, 336.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 4.0, 336.0, 22.0 ],
 					"spacing_y" : 0.0,
 					"tabs" : [ "Light Partials", "Handbell", "Bass Drum" ],
 					"valign" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"background" : 1,
+					"bgcolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ],
+					"border" : 2,
+					"bordercolor" : [ 1.0, 0.650980392156863, 0.650980392156863, 1.0 ],
+					"id" : "obj-3",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 4.0, 28.0, 1300.0, 766.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 4.0, 28.0, 1300.0, 766.0 ],
+					"proportion" : 0.5
 				}
 
 			}
@@ -685,7 +717,7 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-22" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-22" : [ "output", "output", 0 ],
 			"obj-26::obj-131" : [ "live.dial[44]", "Smoothing", 0 ],
 			"obj-26::obj-143" : [ "live.dial[43]", "Update Time", 0 ],
 			"obj-26::obj-156" : [ "live.step[5]", "fundsequence", 0 ],
@@ -878,30 +910,30 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "MULE_s2023_Light_Partials_MAIN_v1.4.maxpat",
+				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "MULE_subpatcher_list seleckta trigger.maxpat",
-				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches/Light-Partials",
-				"patcherrelativepath" : "./Light-Partials",
+				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MULE_subpatcher_nodecommands.maxpat",
-				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches/Light-Partials",
-				"patcherrelativepath" : "./Light-Partials",
+				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MULE_subpatcher_randcoord gen.maxpat",
-				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches/Light-Partials",
-				"patcherrelativepath" : "./Light-Partials",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "_MULE_s2023_Light_Partials_MAIN_v1.4.maxpat",
-				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches/Light-Partials",
-				"patcherrelativepath" : "./Light-Partials",
+				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -914,8 +946,8 @@
 			}
 , 			{
 				"name" : "double_ug_umenu_midinotename.maxpat",
-				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches/Light-Partials",
-				"patcherrelativepath" : "./Light-Partials",
+				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
