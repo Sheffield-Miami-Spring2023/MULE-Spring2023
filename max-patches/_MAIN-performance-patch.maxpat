@@ -110,7 +110,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "MULE_s2023_Light_Partials_MAIN_v1.4.maxpat",
+					"name" : "MULE_s2023_Light_Partials_MAIN_v1.5.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
@@ -910,7 +910,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "MULE_s2023_Light_Partials_MAIN_v1.4.maxpat",
+				"name" : "MULE_s2023_Light_Partials_MAIN_v1.5.maxpat",
 				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
