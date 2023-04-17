@@ -144,13 +144,13 @@ define :pattern13 do |r = 1, o = 0|
 end
 
 define :pattern14 do |r = 1, o = 0|
-  play :c5, release: 4*r
+  play :c5 + o*12, release: 4*r
   sleep 4
-  play :b4, release: 4*r
+  play :b4 + o*12, release: 4*r
   sleep 4
-  play :g4, release: 4*r
+  play :g4 + o*12, release: 4*r
   sleep 4
-  play :fs4, release: 4*r
+  play :fs4 + o*12, release: 4*r
   sleep 4
 end
 
@@ -202,30 +202,30 @@ end
 
 define :pattern19 do |r = 1, o = 0|
   sleep 1.5
-  play :g5, release: 1.5*r
+  play :g5 + o*12, release: 1.5*r
   sleep 1.5
 end
 
 define :pattern20 do |r = 1, o = 0|
-  play :e4, release: 0.25*r
+  play :e4 + o*12, release: 0.25*r
   sleep 0.25
-  play :fs4, release: 0.25*r
+  play :fs4 + o*12, release: 0.25*r
   sleep 0.25
-  play :e4, release: 0.25*r
+  play :e4 + o*12, release: 0.25*r
   sleep 0.25
-  play :fs4, release: 0.25*r
+  play :fs4 + o*12, release: 0.25*r
   sleep 0.25
-  play :g3, release: 0.75*r
+  play :g3 + o*12, release: 0.75*r
   sleep 0.75
-  play :e4, release: 0.25*r
+  play :e4 + o*12, release: 0.25*r
   sleep 0.25
-  play :fs4, release: 0.25*r
+  play :fs4 + o*12, release: 0.25*r
   sleep 0.25
-  play :e4, release: 0.25*r
+  play :e4 + o*12, release: 0.25*r
   sleep 0.25
-  play :fs4, release: 0.25*r
+  play :fs4 + o*12, release: 0.25*r
   sleep 0.25
-  play :e4, release: 0.25*r
+  play :e4 + o*12, release: 0.25*r
   sleep 0.25
 end
 
@@ -298,44 +298,44 @@ define :pattern24 do |r = 1, o = 0|
 end
 
 define :pattern25 do |r = 1, o = 0|
-  play :e4, release: 0.5*r
+  play :e4 + o*12, release: 0.5*r
   sleep 0.5
-  play :fs4, release: 0.5*r
+  play :fs4 + o*12, release: 0.5*r
   sleep 0.5
-  play :g4, release: 0.5*r
+  play :g4 + o*12, release: 0.5*r
   sleep 0.5
-  play :a4, release: 1.5*r
+  play :a4 + o*12, release: 1.5*r
   sleep 1.5
-  play :a4, release: 1.5*r
+  play :a4 + o*12, release: 1.5*r
   sleep 1.5
-  play :a4, release: 1.5*r
+  play :a4 + o*12, release: 1.5*r
   sleep 1.5
-  play :a4, release: 1.5*r
+  play :a4 + o*12, release: 1.5*r
   sleep 1.5
-  play :a4, release: 1.5*r
+  play :a4 + o*12, release: 1.5*r
   sleep 1.5
-  play :b4, release: 1.5*r
+  play :b4 + o*12, release: 1.5*r
   sleep 1.5
 end
 
 define :pattern26 do |r = 1, o = 0|
-  play :e4, release: 0.5*r
+  play :e4 + o*12, release: 0.5*r
   sleep 0.5
-  play :fs4, release: 0.5*r
+  play :fs4 + o*12, release: 0.5*r
   sleep 0.5
-  play :g4, release: 0.5*r
+  play :g4 + o*12, release: 0.5*r
   sleep 0.5
-  play :a4, release: 0.5*r
+  play :a4 + o*12, release: 0.5*r
   sleep 0.5
-  play :b4, release: 1.5*r
+  play :b4 + o*12, release: 1.5*r
   sleep 1.5
-  play :b4, release: 1.5*r
+  play :b4 + o*12, release: 1.5*r
   sleep 1.5
-  play :b4, release: 1.5*r
+  play :b4 + o*12, release: 1.5*r
   sleep 1.5
-  play :b4, release: 1.5*r
+  play :b4 + o*12, release: 1.5*r
   sleep 1.5
-  play :b4, release: 1.5*r
+  play :b4 + o*12, release: 1.5*r
   sleep 1.5
 end
 
@@ -536,59 +536,59 @@ define :pattern39 do |r = 1, o = 0|
 end
 
 define :pattern40 do |r = 1, o = 0|
-  play :b4, release: 0.25*r
+  play :b4 + o*12, release: 0.25*r
   sleep 0.25
-  play :f4, release: 0.25*r
+  play :f4 + o*12, release: 0.25*r
   sleep 0.25
 end
 
 define :pattern41 do |r = 1, o = 0|
-  play :b4, release: 0.25*r
+  play :b4 + o*12, release: 0.25*r
   sleep 0.25
-  play :g4, release: 0.25*r
+  play :g4 + o*12, release: 0.25*r
   sleep 0.25
 end
 
 define :pattern42 do |r = 1, o = 0|
-  play :c5, release: 4*r
+  play :c5 + o*12, release: 4*r
   sleep 4
-  play :b4, release: 4*r
+  play :b4 + o*12, release: 4*r
   sleep 4
-  play :a4, release: 4*r
+  play :a4 + o*12, release: 4*r
   sleep 4
-  play :c5, release: 4*r
+  play :c5 + o*12, release: 4*r
   sleep 4
 end
 
 define :pattern43 do |r = 1, o = 0|
-  play :f5, release: 0.25*r
+  play :f5 + o*12, release: 0.25*r
   sleep 0.25
-  play :e5, release: 0.25*r
+  play :e5 + o*12, release: 0.25*r
   sleep 0.25
-  play :f5, release: 0.25*r
+  play :f5 + o*12, release: 0.25*r
   sleep 0.25
-  play :e5, release: 0.25*r
+  play :e5 + o*12, release: 0.25*r
   sleep 0.25
-  play :e5, release: 0.5*r
+  play :e5 + o*12, release: 0.5*r
   sleep 0.5
-  play :e5, release: 0.5*r
+  play :e5 + o*12, release: 0.5*r
   sleep 0.5
-  play :e5, release: 0.5*r
+  play :e5 + o*12, release: 0.5*r
   sleep 0.5
-  play :f5, release: 0.25*r
+  play :f5 + o*12, release: 0.25*r
   sleep 0.25
-  play :e5, release: 0.25*r
+  play :e5 + o*12, release: 0.25*r
   sleep 0.25
 end
 
 define :pattern44 do |r = 1, o = 0|
-  play :f5, release: 0.5*r
+  play :f5 + o*12, release: 0.5*r
   sleep 0.5
-  play :e5, release: r
+  play :e5 + o*12, release: r
   sleep 1
-  play :e5, release: 0.5*r
+  play :e5 + o*12, release: 0.5*r
   sleep 0.5
-  play :c5, release: r
+  play :c5 + o*12, release: r
   sleep 1
 end
 
