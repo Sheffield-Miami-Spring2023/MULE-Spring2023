@@ -110,11 +110,11 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "MULE_s2023_Light_Partials_MAIN_v1.5.maxpat",
+					"name" : "Light-Partials-419.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 2,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal", "signal" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 136.5, 442.0, 128.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 28.0, 1300.0, 766.0 ],
@@ -129,7 +129,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 26.0, 761.0, 45.0, 45.0 ],
+					"patching_rect" : [ 136.5, 854.0, 45.0, 45.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1306.0, 734.0, 60.0, 60.0 ]
 				}
@@ -144,7 +144,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 26.0, 598.0, 48.0, 136.0 ],
+					"patching_rect" : [ 136.5, 691.0, 48.0, 136.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1306.0, 565.0, 60.0, 180.0 ],
 					"saved_attribute_attributes" : 					{
@@ -294,7 +294,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "bass-drum-delay-415.maxpat",
+					"name" : "DLC-419.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -445,7 +445,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 4.0, 336.0, 22.0 ],
 					"spacing_y" : 0.0,
-					"tabs" : [ "Light Partials", "Handbell", "Bass Drum" ],
+					"tabs" : [ "Light Partials", "Handbell", "DLC" ],
 					"valign" : 2
 				}
 
@@ -576,13 +576,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 1 ],
-					"source" : [ "obj-26", 1 ]
+					"order" : 0,
+					"source" : [ "obj-26", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
+					"order" : 1,
 					"source" : [ "obj-26", 0 ]
 				}
 
@@ -718,53 +720,10 @@
  ],
 		"parameters" : 		{
 			"obj-22" : [ "output", "output", 0 ],
-			"obj-26::obj-131" : [ "live.dial[44]", "Smoothing", 0 ],
-			"obj-26::obj-143" : [ "live.dial[43]", "Update Time", 0 ],
-			"obj-26::obj-156" : [ "live.step[5]", "fundsequence", 0 ],
 			"obj-26::obj-188" : [ "live.dial[38]", "Rand-Rate Y", 0 ],
 			"obj-26::obj-195" : [ "live.dial[39]", "Rand-Rate X", 0 ],
-			"obj-26::obj-205" : [ "live.dial[45]", "tempo", 0 ],
-			"obj-26::obj-23" : [ "live.dial[37]", "Gain", 0 ],
-			"obj-26::obj-24" : [ "mc.live.gain~[1]", "Metering", 0 ],
-			"obj-26::obj-248::obj-1" : [ "live.dial[33]", "Rand-Rate Y", 0 ],
-			"obj-26::obj-248::obj-11::obj-12" : [ "live.dial[13]", "Rand-Rate Y", 0 ],
-			"obj-26::obj-248::obj-11::obj-195" : [ "live.dial[14]", "Rand-Rate X", 0 ],
-			"obj-26::obj-248::obj-12::obj-12" : [ "live.dial[11]", "Rand-Rate Y", 0 ],
-			"obj-26::obj-248::obj-12::obj-195" : [ "live.dial[12]", "Rand-Rate X", 0 ],
-			"obj-26::obj-248::obj-13::obj-12" : [ "live.dial[9]", "Rand-Rate Y", 0 ],
-			"obj-26::obj-248::obj-13::obj-195" : [ "live.dial[10]", "Rand-Rate X", 0 ],
-			"obj-26::obj-248::obj-14::obj-12" : [ "live.dial[7]", "Rand-Rate Y", 0 ],
-			"obj-26::obj-248::obj-14::obj-195" : [ "live.dial[8]", "Rand-Rate X", 0 ],
-			"obj-26::obj-248::obj-17::obj-12" : [ "live.dial[32]", "Rand-Rate Y", 0 ],
-			"obj-26::obj-248::obj-17::obj-195" : [ "live.dial[31]", "Rand-Rate X", 0 ],
-			"obj-26::obj-248::obj-18::obj-12" : [ "live.dial[30]", "Rand-Rate Y", 0 ],
-			"obj-26::obj-248::obj-18::obj-195" : [ "live.dial[29]", "Rand-Rate X", 0 ],
-			"obj-26::obj-248::obj-195" : [ "live.dial[34]", "Rand-Rate X", 0 ],
-			"obj-26::obj-248::obj-19::obj-12" : [ "live.dial[27]", "Rand-Rate Y", 0 ],
-			"obj-26::obj-248::obj-19::obj-195" : [ "live.dial[28]", "Rand-Rate X", 0 ],
-			"obj-26::obj-248::obj-20::obj-12" : [ "live.dial[22]", "Rand-Rate Y", 0 ],
-			"obj-26::obj-248::obj-20::obj-195" : [ "live.dial[26]", "Rand-Rate X", 0 ],
-			"obj-26::obj-248::obj-21::obj-12" : [ "live.dial[21]", "Rand-Rate Y", 0 ],
-			"obj-26::obj-248::obj-21::obj-195" : [ "live.dial[25]", "Rand-Rate X", 0 ],
-			"obj-26::obj-248::obj-228::obj-12" : [ "live.dial[23]", "Rand-Rate Y", 0 ],
-			"obj-26::obj-248::obj-228::obj-195" : [ "live.dial[24]", "Rand-Rate X", 0 ],
-			"obj-26::obj-248::obj-22::obj-12" : [ "live.dial[20]", "Rand-Rate Y", 0 ],
-			"obj-26::obj-248::obj-22::obj-195" : [ "live.dial[19]", "Rand-Rate X", 0 ],
-			"obj-26::obj-248::obj-23::obj-12" : [ "live.dial[17]", "Rand-Rate Y", 0 ],
-			"obj-26::obj-248::obj-23::obj-195" : [ "live.dial[18]", "Rand-Rate X", 0 ],
-			"obj-26::obj-248::obj-24::obj-12" : [ "live.dial[15]", "Rand-Rate Y", 0 ],
-			"obj-26::obj-248::obj-24::obj-195" : [ "live.dial[16]", "Rand-Rate X", 0 ],
-			"obj-26::obj-248::obj-5::obj-12" : [ "live.dial[1]", "Rand-Rate Y", 0 ],
-			"obj-26::obj-248::obj-5::obj-195" : [ "live.dial[2]", "Rand-Rate X", 0 ],
-			"obj-26::obj-248::obj-7::obj-12" : [ "live.dial[3]", "Rand-Rate Y", 0 ],
-			"obj-26::obj-248::obj-7::obj-195" : [ "live.dial[4]", "Rand-Rate X", 0 ],
-			"obj-26::obj-248::obj-8::obj-12" : [ "live.dial[5]", "Rand-Rate Y", 0 ],
-			"obj-26::obj-248::obj-8::obj-195" : [ "live.dial[6]", "Rand-Rate X", 0 ],
-			"obj-26::obj-34" : [ "live.dial[40]", "Threshold", 0 ],
-			"obj-26::obj-44" : [ "live.dial[42]", "Smoothing", 0 ],
-			"obj-26::obj-51" : [ "live.text", "live.text", 0 ],
-			"obj-26::obj-8::obj-5" : [ "live.dial[35]", "ramp time", 0 ],
-			"obj-26::obj-90" : [ "live.dial[36]", "node size", 0 ],
+			"obj-26::obj-34" : [ "live.dial[40]", "Camera Threshold", 0 ],
+			"obj-26::obj-50" : [ "live.step", "live.step", 0 ],
 			"obj-5::obj-32" : [ "toggle[1]", "toggle[15]", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
@@ -775,185 +734,20 @@
 
 			}
 ,
-			"parameter_overrides" : 			{
-				"obj-26::obj-23" : 				{
-					"parameter_longname" : "live.dial[37]"
-				}
-,
-				"obj-26::obj-248::obj-11::obj-12" : 				{
-					"parameter_longname" : "live.dial[13]"
-				}
-,
-				"obj-26::obj-248::obj-11::obj-195" : 				{
-					"parameter_longname" : "live.dial[14]"
-				}
-,
-				"obj-26::obj-248::obj-12::obj-12" : 				{
-					"parameter_longname" : "live.dial[11]"
-				}
-,
-				"obj-26::obj-248::obj-12::obj-195" : 				{
-					"parameter_longname" : "live.dial[12]"
-				}
-,
-				"obj-26::obj-248::obj-13::obj-12" : 				{
-					"parameter_longname" : "live.dial[9]"
-				}
-,
-				"obj-26::obj-248::obj-13::obj-195" : 				{
-					"parameter_longname" : "live.dial[10]"
-				}
-,
-				"obj-26::obj-248::obj-14::obj-12" : 				{
-					"parameter_longname" : "live.dial[7]"
-				}
-,
-				"obj-26::obj-248::obj-14::obj-195" : 				{
-					"parameter_longname" : "live.dial[8]"
-				}
-,
-				"obj-26::obj-248::obj-17::obj-12" : 				{
-					"parameter_longname" : "live.dial[32]"
-				}
-,
-				"obj-26::obj-248::obj-17::obj-195" : 				{
-					"parameter_longname" : "live.dial[31]"
-				}
-,
-				"obj-26::obj-248::obj-18::obj-12" : 				{
-					"parameter_longname" : "live.dial[30]"
-				}
-,
-				"obj-26::obj-248::obj-18::obj-195" : 				{
-					"parameter_longname" : "live.dial[29]"
-				}
-,
-				"obj-26::obj-248::obj-19::obj-12" : 				{
-					"parameter_longname" : "live.dial[27]"
-				}
-,
-				"obj-26::obj-248::obj-19::obj-195" : 				{
-					"parameter_longname" : "live.dial[28]"
-				}
-,
-				"obj-26::obj-248::obj-20::obj-12" : 				{
-					"parameter_longname" : "live.dial[22]"
-				}
-,
-				"obj-26::obj-248::obj-20::obj-195" : 				{
-					"parameter_longname" : "live.dial[26]"
-				}
-,
-				"obj-26::obj-248::obj-21::obj-12" : 				{
-					"parameter_longname" : "live.dial[21]"
-				}
-,
-				"obj-26::obj-248::obj-21::obj-195" : 				{
-					"parameter_longname" : "live.dial[25]"
-				}
-,
-				"obj-26::obj-248::obj-22::obj-12" : 				{
-					"parameter_longname" : "live.dial[20]"
-				}
-,
-				"obj-26::obj-248::obj-22::obj-195" : 				{
-					"parameter_longname" : "live.dial[19]"
-				}
-,
-				"obj-26::obj-248::obj-23::obj-12" : 				{
-					"parameter_longname" : "live.dial[17]"
-				}
-,
-				"obj-26::obj-248::obj-23::obj-195" : 				{
-					"parameter_longname" : "live.dial[18]"
-				}
-,
-				"obj-26::obj-248::obj-24::obj-12" : 				{
-					"parameter_longname" : "live.dial[15]"
-				}
-,
-				"obj-26::obj-248::obj-24::obj-195" : 				{
-					"parameter_longname" : "live.dial[16]"
-				}
-,
-				"obj-26::obj-248::obj-5::obj-12" : 				{
-					"parameter_longname" : "live.dial[1]"
-				}
-,
-				"obj-26::obj-248::obj-5::obj-195" : 				{
-					"parameter_longname" : "live.dial[2]"
-				}
-,
-				"obj-26::obj-248::obj-7::obj-12" : 				{
-					"parameter_longname" : "live.dial[3]"
-				}
-,
-				"obj-26::obj-248::obj-7::obj-195" : 				{
-					"parameter_longname" : "live.dial[4]"
-				}
-,
-				"obj-26::obj-248::obj-8::obj-12" : 				{
-					"parameter_longname" : "live.dial[5]"
-				}
-,
-				"obj-26::obj-248::obj-8::obj-195" : 				{
-					"parameter_longname" : "live.dial[6]"
-				}
-,
-				"obj-26::obj-90" : 				{
-					"parameter_longname" : "live.dial[36]"
-				}
-
-			}
-,
 			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "MULE_s2023_Light_Partials_MAIN_v1.5.maxpat",
+				"name" : "DLC-419.maxpat",
 				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "MULE_subpatcher_list seleckta trigger.maxpat",
+				"name" : "Light-Partials-419.maxpat",
 				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches",
 				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MULE_subpatcher_nodecommands.maxpat",
-				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MULE_subpatcher_randcoord gen.maxpat",
-				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bass-drum-delay-415.maxpat",
-				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "double_ug_umenu_midinotename.maxpat",
-				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "openTransport.maxpat",
-				"bootpath" : "C74:/help/max",
 				"type" : "JSON",
 				"implicit" : 1
 			}

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1372.0, 804.0 ],
+		"rect" : [ 34.0, 62.0, 853.0, 804.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -3329,14 +3329,15 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 1,
 					"id" : "obj-42",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 158.0, 100.0, 151.0, 33.0 ],
+					"patching_rect" : [ 158.0, 100.0, 127.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.0, 3.0, 200.0, 20.0 ],
+					"presentation_rect" : [ 3.0, 3.0, 214.0, 20.0 ],
 					"text" : "RETURN key to turn input on/off"
 				}
 
@@ -3370,7 +3371,7 @@
 					"patching_rect" : [ 578.25, 508.0, 360.0, 155.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 488.5, 256.0, 128.0 ],
-					"setfilter" : [ 0, 3, 1, 0, 0, 2016.3829345703125, 0.000099999997474, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+					"setfilter" : [ 0, 3, 1, 0, 0, 638.01605224609375, 0.000099999997474, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 				}
 
 			}
