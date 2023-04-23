@@ -110,7 +110,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "Light-Partials-419.maxpat",
+					"name" : "Light-Partials-423.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -720,6 +720,7 @@
  ],
 		"parameters" : 		{
 			"obj-22" : [ "output", "output", 0 ],
+			"obj-26::obj-142" : [ "toggle[2]", "toggle[15]", 0 ],
 			"obj-26::obj-188" : [ "live.dial[38]", "Rand-Rate Y", 0 ],
 			"obj-26::obj-195" : [ "live.dial[39]", "Rand-Rate X", 0 ],
 			"obj-26::obj-34" : [ "live.dial[40]", "Camera Threshold", 0 ],
@@ -745,7 +746,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Light-Partials-419.maxpat",
+				"name" : "Light-Partials-423.maxpat",
 				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
