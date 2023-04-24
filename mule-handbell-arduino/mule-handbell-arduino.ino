@@ -94,9 +94,7 @@ void loop() {
     Serial.write(253); // left note flag
     Serial.write(leftNote);
     debounceTimerLY = 0;
-    if (ledBrightness <= 0) {
-      ledBrightness = 255;
-    }
+    ledBrightness = 255;
   }
   else if (-diffY > eventThreshold && -diffY < -lastDiffY && debounceTimerRY >= debounceAmount) {
     int constrainY = constrain(abs(diffY), eventThreshold, eventMax);
@@ -104,9 +102,7 @@ void loop() {
     Serial.write(254); // right note flag
     Serial.write(rightNote);
     debounceTimerRY = 0;
-    if (ledBrightness <= 0) {
-      ledBrightness = 255;
-    }
+    ledBrightness = 255;
   }
 
   if (debounceTimerLY++ >= debounceAmount) {
@@ -132,9 +128,7 @@ void loop() {
     Serial.write(252); // top note flag
     Serial.write(topNote);
     debounceTimerZ = 0;
-    if (ledBrightness <= 0) {
-      ledBrightness = 255;
-    }
+    ledBrightness = 255;
   }
 
   if (debounceTimerZ++ >= debounceAmount) {
@@ -158,7 +152,6 @@ void loop() {
   Serial.write(potValue);
 
   analogWrite(blueLED, ledBrightness);
-  analogWrite(greenLED, ledBrightness);
 
   if ((ledBrightness-=5) <= 0) {
     ledBrightness = 0;

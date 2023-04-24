@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -40,14 +40,81 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-10",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 867.0, 471.0, 150.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 676.0, 389.0, 264.0, 20.0 ],
+					"text" : "6. on phone, go to mule-handbell.pages.dev"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 675.0, 223.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 676.0, 225.0, 150.0, 20.0 ],
+					"text" : "5. test shake and slider"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 588.0, 216.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 563.0, 15.0, 29.0, 20.0 ],
+					"text" : "G4",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 207.0, 360.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 20.0, 15.0, 29.0, 20.0 ],
+					"text" : "B2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "meter~",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 541.0, 1250.0, 80.0, 13.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 702.0, 247.0, 18.0, 140.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-112",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 761.0, 619.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 481.0, 413.0, 150.0, 20.0 ],
-					"text" : "start arduino"
+					"presentation_rect" : [ 676.0, 177.0, 150.0, 20.0 ],
+					"text" : "4. start arduino"
 				}
 
 			}
@@ -59,8 +126,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 787.0, 561.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 481.0, 367.0, 150.0, 20.0 ],
-					"text" : "choose orientation"
+					"presentation_rect" : [ 676.0, 131.0, 150.0, 20.0 ],
+					"text" : "3. choose orientation"
 				}
 
 			}
@@ -71,10 +138,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 781.0, 522.0, 150.0, 33.0 ],
+					"patching_rect" : [ 781.0, 522.0, 153.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 481.0, 321.0, 221.0, 20.0 ],
-					"text" : "choose arduino (e.g. usb modem)"
+					"presentation_rect" : [ 676.0, 85.0, 261.0, 20.0 ],
+					"text" : "2. choose arduino from list (e.g. usb modem)"
 				}
 
 			}
@@ -86,8 +153,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 760.0, 463.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 481.0, 273.0, 106.0, 20.0 ],
-					"text" : "refresh device list"
+					"presentation_rect" : [ 676.0, 37.0, 146.0, 20.0 ],
+					"text" : "1. refresh device list"
 				}
 
 			}
@@ -99,7 +166,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 724.0, 430.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 481.0, 251.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 674.0, 15.0, 150.0, 20.0 ],
 					"text" : "handbell controller setup"
 				}
 
@@ -260,7 +327,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 13.0, 341.0, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 481.0, 389.0, 100.0, 22.0 ]
+					"presentation_rect" : [ 676.0, 153.0, 100.0, 22.0 ]
 				}
 
 			}
@@ -274,7 +341,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 166.0, 93.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 481.0, 295.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 676.0, 59.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -365,7 +432,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-32",
-					"items" : [ "wlan-debug", ",", "Bluetooth-Incoming-Port" ],
+					"items" : [ "wlan-debug", ",", "Phonum-786", ",", "Bluetooth-Incoming-Port", ",", "usbmodem101" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -373,7 +440,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 262.0, 245.0, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 481.0, 343.0, 125.0, 22.0 ]
+					"presentation_rect" : [ 676.0, 107.0, 125.0, 22.0 ]
 				}
 
 			}
@@ -423,7 +490,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 253.75, 397.0, 20.0, 140.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 533.5, 100.0, 20.0, 140.0 ]
+					"presentation_rect" : [ 722.0, 247.0, 20.0, 140.0 ]
 				}
 
 			}
@@ -485,7 +552,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 115.0, 13.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 481.0, 435.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 676.0, 199.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -525,7 +592,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -900,12 +967,13 @@
 					"maxclass" : "kslider",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"offset" : 48,
+					"offset" : 59,
 					"outlettype" : [ "int", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 427.0, 700.5, 336.0, 53.0 ],
+					"patching_rect" : [ 427.0, 700.5, 156.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 195.0, 100.0, 336.0, 53.0 ]
+					"presentation_rect" : [ 20.0, 37.0, 572.0, 174.0 ],
+					"range" : 22
 				}
 
 			}
@@ -924,13 +992,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 383.0, 819.0, 42.0, 20.0 ],
+					"patching_rect" : [ 383.0, 819.0, 42.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 195.0, 155.0, 42.0, 20.0 ],
-					"text" : "pitch"
+					"presentation_rect" : [ 20.0, 213.0, 73.0, 20.0 ],
+					"text" : "set pitch"
 				}
 
 			}
@@ -1074,7 +1143,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 427.0, 673.0, 77.0, 22.0 ],
-					"text" : "loadmess 60"
+					"text" : "loadmess 59"
 				}
 
 			}
@@ -1090,7 +1159,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 427.0, 819.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 239.0, 155.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 95.0, 213.0, 50.0, 22.0 ],
 					"triangle" : 0
 				}
 
@@ -1104,6 +1173,20 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 427.0, 989.0, 40.0, 22.0 ],
 					"text" : "rect~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 133.0, 444.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 676.0, 247.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -1274,7 +1357,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"order" : 0,
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-98", 0 ],
+					"order" : 1,
 					"source" : [ "obj-35", 0 ]
 				}
 
@@ -1429,7 +1521,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"order" : 0,
+					"source" : [ "obj-64", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-74", 0 ],
+					"order" : 1,
 					"source" : [ "obj-64", 0 ]
 				}
 
