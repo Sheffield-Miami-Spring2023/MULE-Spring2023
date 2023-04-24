@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 853.0, 804.0 ],
+		"rect" : [ 34.0, 62.0, 1372.0, 804.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,15 +40,67 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-48",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 600.0, 116.0, 22.0, 22.0 ],
+					"text" : "t b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-43",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 765.0, 322.0, 156.0, 22.0 ],
+					"text" : "readfile tta-423-1-p2.pdf"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 524.864285809653211, 172.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1157.0, 0.0, 100.0, 20.0 ],
+					"text" : "Part"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"items" : [ "choose...", ",", "Player", 1, ",", "Player", 2, ",", "Player", 3 ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 524.864285809653211, 194.0, 100.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1157.0, 22.0, 100.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-31",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 684.0, 20.0, 150.0, 33.0 ],
+					"patching_rect" : [ 411.0, 87.5, 150.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1157.0, 46.0, 108.0, 33.0 ],
+					"presentation_rect" : [ 1157.0, 70.0, 108.0, 33.0 ],
 					"text" : "use arrow keys to navigate pages"
 				}
 
@@ -57,11 +109,11 @@
 				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 692.0, 249.010217905015907, 164.0, 22.0 ],
-					"text" : "sprintf handbells-419-p%i.pdf"
+					"patching_rect" : [ 692.0, 249.010217905015907, 143.0, 22.0 ],
+					"text" : "sprintf tta-423-%i-p%i.pdf"
 				}
 
 			}
@@ -142,7 +194,7 @@
 					"id" : "obj-18",
 					"ignoreclick" : 1,
 					"maxclass" : "number",
-					"maximum" : 6,
+					"maximum" : 3,
 					"minimum" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -150,7 +202,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 730.864285809653211, 209.5, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1157.0, 22.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 1157.0, 46.0, 50.0, 22.0 ],
 					"triangle" : 0
 				}
 
@@ -178,7 +230,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 576.0, 0.0, 579.0, 758.0 ],
 					"rendermode" : 0,
-					"url" : "file://handbells-419-p6.pdf"
+					"url" : "file://tta-423-1-p2.pdf"
 				}
 
 			}
@@ -202,7 +254,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 586.0, 12.0, 150.0, 20.0 ],
+					"patching_rect" : [ 495.0, 42.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 451.0, 150.0, 20.0 ],
 					"text" : "5. test shake and slider"
@@ -1378,7 +1430,23 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-146", 0 ],
+					"order" : 0,
+					"source" : [ "obj-143", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-48", 0 ],
+					"order" : 1,
 					"source" : [ "obj-143", 0 ]
 				}
 
@@ -1428,6 +1496,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
+					"order" : 1,
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-43", 1 ],
+					"order" : 0,
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -1435,15 +1512,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-149", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-18", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-16", 1 ],
+					"order" : 0,
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -1661,6 +1738,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
 					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-48", 0 ]
 				}
 
 			}
