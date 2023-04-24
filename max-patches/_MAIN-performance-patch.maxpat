@@ -93,6 +93,7 @@
 					"patching_rect" : [ 283.0, 442.0, 128.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 28.0, 1300.0, 766.0 ],
+					"varname" : "handbell",
 					"viewvisibility" : 1
 				}
 

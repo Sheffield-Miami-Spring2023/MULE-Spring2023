@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 133.0, 84.0, 1202.0, 710.0 ],
+		"rect" : [ 34.0, 62.0, 1372.0, 804.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,150 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-31",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 684.0, 20.0, 150.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 1157.0, 46.0, 108.0, 33.0 ],
+					"text" : "use arrow keys to navigate pages"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 692.0, 249.010217905015907, 164.0, 22.0 ],
+					"text" : "sprintf handbells-419-p%i.pdf"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 692.0, 276.0, 95.0, 22.0 ],
+					"text" : "prepend readfile"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-153",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 725.614285809653211, 168.5, 29.5, 22.0 ],
+					"text" : "inc"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-152",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 694.114285809653211, 168.5, 29.5, 22.0 ],
+					"text" : "dec"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-149",
+					"maxclass" : "incdec",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 694.114285809653211, 209.5, 20.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-146",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "" ],
+					"patching_rect" : [ 694.114285809653211, 132.5, 57.0, 22.0 ],
+					"text" : "sel 28 29"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-143",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 4,
+					"outlettype" : [ "int", "int", "int", "int" ],
+					"patching_rect" : [ 693.864285809653211, 98.489782094984093, 50.5, 22.0 ],
+					"text" : "key"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"ignoreclick" : 1,
+					"maxclass" : "number",
+					"maximum" : 6,
+					"minimum" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 730.864285809653211, 209.5, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1157.0, 22.0, 50.0, 22.0 ],
+					"triangle" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-61",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 757.114285809653211, 168.5, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "jweb",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 692.0, 349.0, 320.0, 240.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 576.0, 0.0, 579.0, 758.0 ],
+					"rendermode" : 0,
+					"url" : "file://handbells-419-p6.pdf"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-10",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -47,7 +191,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 867.0, 471.0, 150.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 676.0, 389.0, 264.0, 20.0 ],
+					"presentation_rect" : [ 2.0, 618.0, 264.0, 20.0 ],
 					"text" : "6. on phone, go to mule-handbell.pages.dev"
 				}
 
@@ -58,9 +202,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 675.0, 223.0, 150.0, 20.0 ],
+					"patching_rect" : [ 586.0, 12.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 676.0, 225.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 2.0, 454.0, 150.0, 20.0 ],
 					"text" : "5. test shake and slider"
 				}
 
@@ -71,9 +215,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 588.0, 216.0, 150.0, 20.0 ],
+					"patching_rect" : [ 499.0, 5.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 563.0, 15.0, 29.0, 20.0 ],
+					"presentation_rect" : [ 543.0, 0.0, 29.0, 20.0 ],
 					"text" : "G4",
 					"textjustification" : 2
 				}
@@ -87,7 +231,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 207.0, 360.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 15.0, 29.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 29.0, 20.0 ],
 					"text" : "B2"
 				}
 
@@ -101,7 +245,7 @@
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 541.0, 1250.0, 80.0, 13.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 702.0, 247.0, 18.0, 140.0 ]
+					"presentation_rect" : [ 28.0, 476.0, 18.0, 140.0 ]
 				}
 
 			}
@@ -113,7 +257,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 761.0, 619.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 676.0, 177.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 2.0, 406.0, 150.0, 20.0 ],
 					"text" : "4. start arduino"
 				}
 
@@ -126,7 +270,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 787.0, 561.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 676.0, 131.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 2.0, 360.0, 150.0, 20.0 ],
 					"text" : "3. choose orientation"
 				}
 
@@ -140,7 +284,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 781.0, 522.0, 153.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 676.0, 85.0, 261.0, 20.0 ],
+					"presentation_rect" : [ 2.0, 314.0, 261.0, 20.0 ],
 					"text" : "2. choose arduino from list (e.g. usb modem)"
 				}
 
@@ -153,7 +297,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 760.0, 463.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 676.0, 37.0, 146.0, 20.0 ],
+					"presentation_rect" : [ 2.0, 266.0, 146.0, 20.0 ],
 					"text" : "1. refresh device list"
 				}
 
@@ -166,7 +310,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 724.0, 430.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 674.0, 15.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 244.0, 150.0, 20.0 ],
 					"text" : "handbell controller setup"
 				}
 
@@ -327,7 +471,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 13.0, 341.0, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 676.0, 153.0, 100.0, 22.0 ]
+					"presentation_rect" : [ 2.0, 382.0, 100.0, 22.0 ]
 				}
 
 			}
@@ -341,7 +485,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 166.0, 93.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 676.0, 59.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 2.0, 288.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -440,7 +584,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 262.0, 245.0, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 676.0, 107.0, 125.0, 22.0 ]
+					"presentation_rect" : [ 2.0, 336.0, 125.0, 22.0 ]
 				}
 
 			}
@@ -490,7 +634,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 253.75, 397.0, 20.0, 140.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 722.0, 247.0, 20.0, 140.0 ]
+					"presentation_rect" : [ 48.0, 476.0, 20.0, 140.0 ]
 				}
 
 			}
@@ -552,7 +696,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 115.0, 13.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 676.0, 199.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 2.0, 428.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -972,7 +1116,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 427.0, 700.5, 156.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 37.0, 572.0, 174.0 ],
+					"presentation_rect" : [ 0.0, 22.0, 572.0, 174.0 ],
 					"range" : 22
 				}
 
@@ -998,7 +1142,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 383.0, 819.0, 42.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 213.0, 73.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 198.0, 73.0, 20.0 ],
 					"text" : "set pitch"
 				}
 
@@ -1159,7 +1303,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 427.0, 819.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 95.0, 213.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 75.0, 198.0, 50.0, 22.0 ],
 					"triangle" : 0
 				}
 
@@ -1186,7 +1330,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 133.0, 444.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 676.0, 247.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 2.0, 476.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -1229,6 +1373,78 @@
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-146", 0 ],
+					"source" : [ "obj-143", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-152", 0 ],
+					"source" : [ "obj-146", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-153", 0 ],
+					"source" : [ "obj-146", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-149", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-149", 0 ],
+					"source" : [ "obj-152", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-149", 0 ],
+					"source" : [ "obj-153", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-149", 0 ],
+					"order" : 0,
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"order" : 1,
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
@@ -1509,6 +1725,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-101", 0 ],
 					"source" : [ "obj-59", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-61", 0 ]
 				}
 
 			}
