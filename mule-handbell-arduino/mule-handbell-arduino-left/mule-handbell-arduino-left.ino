@@ -90,7 +90,7 @@ void loop() {
 
   // left/right note
   int smoothY = accY*0.15 + lastY*0.85;
-  int diffY = smoothY - lastY;
+  int diffY = smoothY - lastY; 
 
   if (diffY > eventThreshold && diffY < lastDiffY && debounceTimer >= debounceAmount) {
     int constrainY = constrain(diffY, eventThreshold, eventMax);

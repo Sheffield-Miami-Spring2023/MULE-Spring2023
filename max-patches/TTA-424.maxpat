@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 905.0, 804.0 ],
+		"rect" : [ 34.0, 62.0, 1372.0, 804.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1394,7 +1394,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 447.0, 139.0, 21.0, 71.0 ],
 					"size" : 3,
-					"value" : 2
+					"value" : 0
 				}
 
 			}
@@ -1848,7 +1848,7 @@
 										"type" : ""
 									}
 ,
-									"rnbo_serial" : 56,
+									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "buffer~_obj-33",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
@@ -2374,7 +2374,7 @@
 										"type" : ""
 									}
 ,
-									"rnbo_serial" : 52,
+									"rnbo_serial" : 2,
 									"rnbo_uniqueid" : "buffer~_obj-7",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
@@ -2762,7 +2762,7 @@
 										"initial" : 0.0
 									}
 ,
-									"rnbo_serial" : 3,
+									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "i_obj-71",
 									"text" : "i"
 								}
@@ -5049,7 +5049,7 @@
 										"type" : ""
 									}
 ,
-									"rnbo_serial" : 55,
+									"rnbo_serial" : 3,
 									"rnbo_uniqueid" : "buffer~_obj-6",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
@@ -5349,7 +5349,7 @@
 										"type" : ""
 									}
 ,
-									"rnbo_serial" : 54,
+									"rnbo_serial" : 4,
 									"rnbo_uniqueid" : "buffer~_obj-62",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
@@ -5649,7 +5649,7 @@
 										"type" : ""
 									}
 ,
-									"rnbo_serial" : 53,
+									"rnbo_serial" : 5,
 									"rnbo_uniqueid" : "buffer~_obj-61",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
@@ -5949,7 +5949,7 @@
 										"type" : ""
 									}
 ,
-									"rnbo_serial" : 50,
+									"rnbo_serial" : 6,
 									"rnbo_uniqueid" : "buffer~_obj-60",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
@@ -6249,7 +6249,7 @@
 										"type" : ""
 									}
 ,
-									"rnbo_serial" : 49,
+									"rnbo_serial" : 7,
 									"rnbo_uniqueid" : "buffer~_obj-58",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
@@ -6549,7 +6549,7 @@
 										"type" : ""
 									}
 ,
-									"rnbo_serial" : 48,
+									"rnbo_serial" : 8,
 									"rnbo_uniqueid" : "buffer~_obj-57",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
@@ -6849,7 +6849,7 @@
 										"type" : ""
 									}
 ,
-									"rnbo_serial" : 45,
+									"rnbo_serial" : 9,
 									"rnbo_uniqueid" : "buffer~_obj-56",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
@@ -7149,7 +7149,7 @@
 										"type" : ""
 									}
 ,
-									"rnbo_serial" : 44,
+									"rnbo_serial" : 10,
 									"rnbo_uniqueid" : "buffer~_obj-54",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
