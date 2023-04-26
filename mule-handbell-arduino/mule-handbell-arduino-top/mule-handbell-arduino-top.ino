@@ -37,19 +37,23 @@ int potMax = 720;
 int potValue = 0;
 
 int delayAmount = 10;
-int debounceTimerLY = 20;
-int debounceTimerRY = 20;
-int debounceTimerZ = 20;
+int debounceTimer = 20;
 int debounceAmount = 20;
 
-int lastY = 0;
-int lastDiffY = 0;
+int accX, accY, accZ;
+
+int topNote;
 
 int lastZ = 0;
 int lastDiffZ = 0;
 
 void setup() {
-  Serial.begin(74880);
+  Wire.begin();
+  Wire.setWireTimeout(3000, true);
+  Wire.beginTransmission(MPU_ADDR); // Begins a transmission to the I2C slave (GY-521 board)
+  Wire.write(0x6B); // PWR_MGMT_1 register
+  Wire.write(0); // set to zero (wakes up the MPU-6050)
+  Wire.endTransmission(true);
 
   pinMode(A0, INPUT_PULLUP);
 
@@ -59,12 +63,7 @@ void setup() {
   pinMode(pinkLED, OUTPUT);
   pinMode(redLED, OUTPUT);
 
-
-  Wire.begin();
-  Wire.beginTransmission(MPU_ADDR); // Begins a transmission to the I2C slave (GY-521 board)
-  Wire.write(0x6B); // PWR_MGMT_1 register
-  Wire.write(0); // set to zero (wakes up the MPU-6050)
-  Wire.endTransmission(true);
+  Serial.begin(115200);
 }
 
 void loop() {
@@ -75,64 +74,35 @@ void loop() {
   Wire.endTransmission(false); // the parameter indicates that the Arduino will send a restart. As a result, the connection is kept active.
   Wire.requestFrom(MPU_ADDR, 7*2, true); // request a total of 7*2=14 registers
 
-
-  int accX = Wire.read()<<8 | Wire.read(); // reading registers: 0x3B (ACCEL_XOUT_H) and 0x3C (ACCEL_XOUT_L)
+  accX = Wire.read();
+  accX <<= 8;
+  accX |= Wire.read();
 
   // Y is for devices with pot on side
-  int accY = Wire.read()<<8 | Wire.read(); // reading registers: 0x3D (ACCEL_YOUT_H) and 0x3E (ACCEL_YOUT_L)
+  accY = Wire.read();
+  accY <<= 8;
+  accY |= Wire.read();
 
   // Z is for devices with pot on top
-  int accZ = Wire.read()<<8 | Wire.read(); // reading registers: 0x3F (ACCEL_ZOUT_H) and 0x40 (ACCEL_ZOUT_L)
-
-  // left/right note
-  int smoothY = accY*0.15 + lastY*0.85;
-  int diffY = smoothY - lastY;
-
-  if (diffY > eventThreshold && diffY < lastDiffY && debounceTimerLY >= debounceAmount) {
-    int constrainY = constrain(diffY, eventThreshold, eventMax);
-    int leftNote = map(constrainY, eventThreshold, eventMax, 1, 127);
-    Serial.write(253); // left note flag
-    Serial.write(leftNote);
-    debounceTimerLY = 0;
-    ledBrightness = 255;
-  }
-  else if (-diffY > eventThreshold && -diffY < -lastDiffY && debounceTimerRY >= debounceAmount) {
-    int constrainY = constrain(abs(diffY), eventThreshold, eventMax);
-    int rightNote = map(constrainY, eventThreshold, eventMax, 1, 127);
-    Serial.write(254); // right note flag
-    Serial.write(rightNote);
-    debounceTimerRY = 0;
-    ledBrightness = 255;
-  }
-
-  if (debounceTimerLY++ >= debounceAmount) {
-    debounceTimerLY = debounceAmount;
-  }
-
-  if (debounceTimerRY++ >= debounceAmount) {
-    debounceTimerRY = debounceAmount;
-  }
-
-  lastY = smoothY;
-  lastDiffY = diffY;
-
-  //
+  accZ = Wire.read();
+  accZ <<= 8;
+  accZ |= Wire.read();
 
   // top note
   int smoothZ = accZ*0.15 + lastZ*0.85;
   int diffZ = smoothZ - lastZ;
 
-  if (diffZ > eventThreshold && diffZ < lastDiffZ && debounceTimerZ >= debounceAmount) {
+  if (diffZ > eventThreshold && diffZ < lastDiffZ && debounceTimer >= debounceAmount) {
     int constrainZ = constrain(diffZ, eventThreshold, eventMax);
-    int topNote = map(constrainZ, eventThreshold, eventMax, 1, 127);
-    Serial.write(252); // top note flag
+    topNote = map(constrainZ, eventThreshold, eventMax, 1, 127);
+    Serial.write(254); // note flag
     Serial.write(topNote);
-    debounceTimerZ = 0;
-    ledBrightness = 255;
+    debounceTimer = 0;
+    ledBrightness = topNote*2+1;
   }
 
-  if (debounceTimerZ++ >= debounceAmount) {
-    debounceTimerZ = debounceAmount;
+  if (debounceTimer++ >= debounceAmount) {
+    debounceTimer = debounceAmount;
   }
 
   lastZ = smoothZ;
@@ -153,7 +123,7 @@ void loop() {
 
   analogWrite(blueLED, ledBrightness);
 
-  if ((ledBrightness-=5) <= 0) {
+  if ((ledBrightness-=topNote*0.03) <= 0) {
     ledBrightness = 0;
   }
 

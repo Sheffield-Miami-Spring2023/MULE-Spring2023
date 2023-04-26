@@ -11,7 +11,7 @@
 ,
 		"classnamespace" : "box",
 		"rect" : [ 34.0, 62.0, 1372.0, 804.0 ],
-		"bglocked" : 1,
+		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
@@ -76,16 +76,18 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.470588235294118, 0.470588235294118, 0.705882352941176, 1.0 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-14",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "handbell-demo.maxpat",
+					"name" : "TTA-424.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -161,12 +163,12 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.470588235294118, 0.470588235294118, 0.705882352941176, 1.0 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-26",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
@@ -345,6 +347,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.470588235294118, 0.470588235294118, 0.705882352941176, 1.0 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -515,9 +518,9 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ],
+					"bgcolor" : [ 0.470588235294118, 0.470588235294118, 0.705882352941176, 1.0 ],
 					"border" : 2,
-					"bordercolor" : [ 1.0, 0.650980392156863, 0.650980392156863, 1.0 ],
+					"bordercolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ],
 					"id" : "obj-3",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -858,14 +861,15 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "handbell-demo.maxpat",
+				"name" : "TTA-424.maxpat",
 				"bootpath" : "~/GitHub/Spring2023-Miami/MULE-Spring2023/max-patches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
-		"autosave" : 0
+		"autosave" : 0,
+		"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 	}
 
 }

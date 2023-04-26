@@ -48,7 +48,8 @@
 					"patching_rect" : [ 609.0, 170.0, 150.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 519.0, 76.5, 213.0, 20.0 ],
-					"text" : "page (arrow keys to change pages)"
+					"text" : "page (arrow keys to change pages)",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -150,6 +151,7 @@
 					"patching_rect" : [ 1098.464285714285779, 600.5, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 467.0, 76.5, 50.0, 22.0 ],
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"triangle" : 0
 				}
 
@@ -666,7 +668,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 97.5, 653.5, 289.0, 89.0 ],
 					"text" : "00:00:00",
-					"textcolor" : [ 0.898039215686275, 0.898039215686275, 0.898039215686275, 1.0 ]
+					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
 				}
 
 			}
@@ -706,7 +708,8 @@
 					"patching_rect" : [ 457.0, 744.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 629.5, 110.0, 20.0 ],
-					"text" : "start/stop timer (X)"
+					"text" : "start/stop timer (X)",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -745,7 +748,8 @@
 					"presentation" : 1,
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 467.0, 20.0, 231.0, 47.0 ],
-					"text" : "number keys 1,2,3...0 and first alphabetic row (qwer..iop) control delay time in 0.1 second intervals. "
+					"text" : "number keys 1,2,3...0 and first alphabetic row (qwer..iop) control delay time in 0.1 second intervals. ",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -759,7 +763,8 @@
 					"patching_rect" : [ 476.25, 377.5, 150.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 205.5, 47.0, 263.0, 20.0 ],
-					"text" : "SLIDE: moves gradually to selected delay time"
+					"text" : "SLIDE: moves gradually to selected delay time",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -773,7 +778,8 @@
 					"patching_rect" : [ 476.25, 332.0, 150.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 205.5, 25.0, 210.0, 20.0 ],
-					"text" : "JUMP: jumps to selected delay time"
+					"text" : "JUMP: jumps to selected delay time",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -787,7 +793,8 @@
 					"patching_rect" : [ 476.25, 420.0, 150.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 205.5, 3.0, 210.0, 20.0 ],
-					"text" : "Z- swtich between JUMP and SLIDE"
+					"text" : "Z- swtich between JUMP and SLIDE",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -826,6 +833,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 405.0, 76.5, 58.0, 22.0 ],
 					"text" : "SLIDE",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -3039,7 +3047,8 @@
 					"patching_rect" : [ 1117.0, 390.0, 150.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 219.0, 402.5, 170.0, 20.0 ],
-					"text" : "control using dial (if needed)"
+					"text" : "control using dial (if needed)",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -3052,7 +3061,8 @@
 					"patching_rect" : [ 856.0, 322.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 402.5, 150.0, 20.0 ],
-					"text" : "control using XY"
+					"text" : "control using XY",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -3065,7 +3075,8 @@
 					"patching_rect" : [ 934.999999999999886, 355.0, 78.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 110.999999999999886, 424.5, 78.0, 20.0 ],
-					"text" : "gain"
+					"text" : "gain",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -3078,7 +3089,8 @@
 					"patching_rect" : [ 821.821428571428555, 355.0, 78.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 424.5, 78.0, 20.0 ],
-					"text" : "frequency"
+					"text" : "frequency",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -3115,7 +3127,8 @@
 					"patching_rect" : [ 1026.464285714285779, 261.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 259.5, 552.5, 169.0, 20.0 ],
-					"text" : "KILL SWITCH (spacebar)"
+					"text" : "KILL SWITCH (spacebar)",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -3152,7 +3165,8 @@
 					"patching_rect" : [ 1075.0, 348.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 219.0, 424.5, 121.0, 20.0 ],
-					"text" : "q (tightness of filter)"
+					"text" : "q (tightness of filter)",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -3281,7 +3295,8 @@
 					"patching_rect" : [ 821.571428571428555, 91.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 78.5, 150.0, 20.0 ],
-					"text" : "trackpad controls"
+					"text" : "trackpad controls",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -3334,7 +3349,8 @@
 					"patching_rect" : [ 158.0, 100.0, 127.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 3.0, 214.0, 20.0 ],
-					"text" : "RETURN key to turn input on/off"
+					"text" : "RETURN key to turn input on/off",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -3347,7 +3363,8 @@
 					"patching_rect" : [ 105.5, 226.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 33.5, 150.0, 20.0 ],
-					"text" : "input level"
+					"text" : "input level",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -3418,6 +3435,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 399.5, 402.5, 69.0, 20.0 ],
 					"text" : "Delay time",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -3435,7 +3453,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 273.25, 367.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 405.0, 378.5, 58.0, 22.0 ]
+					"presentation_rect" : [ 405.0, 378.5, 58.0, 22.0 ],
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -4041,7 +4060,8 @@
 		}
 ,
 		"dependency_cache" : [  ],
-		"autosave" : 0
+		"autosave" : 0,
+		"bgcolor" : [ 0.470588235294118, 0.470588235294118, 0.705882352941176, 1.0 ]
 	}
 
 }
